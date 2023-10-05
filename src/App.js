@@ -1,11 +1,12 @@
 
+import { FirstBlock } from 'components/FirstBlock/FirstBlock';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <FirstBlock />
+    </>
   );
 }
 
