@@ -1,0 +1,33 @@
+
+[
+  {
+    "id": 1,
+    "advantage": "Reliability",
+    "description": "Loyal prices - winning optimization, support, and improvement solutions for Your project"
+  },
+  {
+    "id": 2,
+    "advantage": "Attention to detail",
+    "description": "this is a key step in the process of solving problems. This is the place where ideological considerations are born, and the day-to-day work of forming our position begins. Details become important building blocks of our success. So let's delve into them and open new horizons."
+  },
+  {
+    "id": 3,
+    "advantage": "Punctuality",
+    "description": "is our guarantee of reliability and success. We always place orders on time, which makes us the preferred choice for clients."
+  },
+  {
+    "id": 4,
+    "advantage": "Planning",
+    "description": "is our way of ensuring accuracy and organization at every step. We carefully develop plans to achieve goals, optimize processes and provide our clients with the best solutions."
+  },
+  {
+    "id": 5,
+    "advantage": "Creative design",
+    "description": "We have vast experience in creating unique and creative designs, which helps the website stand out and attract the attention of the audience"
+  },
+  {
+    "id": 6,
+    "advantage": "Technical expertise",
+    "description": "We have in-depth knowledge and skills in web development to ensure the functionality, performance and security of websites."
+  }
+]
