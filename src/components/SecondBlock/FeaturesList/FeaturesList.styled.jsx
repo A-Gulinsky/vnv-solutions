@@ -10,10 +10,21 @@ export const Ul = styled.ul`
   background-color: #000;
 
   height: 300px;
-  outline: 2px solid blue;
-  border: 2px solid silver;
   display: flex;
   gap: 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -13px;
+    width: 120%;
+    rotate: 351deg;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px 2px #72a9e5;
+  }
 `
 
 const firstLi = {
@@ -97,6 +108,8 @@ export const Li = styled.li`
 
   opacity: 0.95;
 
+  border-radius: 4px;
+
   transition: 150ms ease;
 
   ${setLiStyle};
@@ -104,6 +117,7 @@ export const Li = styled.li`
   &:hover {
     z-index: 15;
     opacity: 1;
+    transform: translateY(-10px) scale(1.1);
   }
 `
 
@@ -114,6 +128,9 @@ export const Button = styled.button`
   background-color: #000;
   outline: transparent;
   border: none;
+  box-shadow: 0px 0px 8px 2px #72a9e5;
+
+  cursor: pointer;
 `
 
 export const DecoDiv = styled(motion.div)`
@@ -122,14 +139,32 @@ export const DecoDiv = styled(motion.div)`
   top: 154px;
   right: 90px;
 
-  width: 50px;
-  height: 50px;
-  background-color: black;
+  z-index: 3;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px 6px #72a9e5;
 `
 
 export const ItemTitle = styled.h3`
   text-align: center;
   padding: 5px;
 
+  font-family: 'Relative';
+  font-weight: 400;
+  letter-spacing: 0.05em;
   color: #fff;
+`
+
+export const ClickMe = styled.b`
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  rotate: 352deg;
+
+  font-family: 'Raleway';
+  letter-spacing: 0.02em;
+  font-weight: 200;
 `

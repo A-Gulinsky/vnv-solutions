@@ -1,4 +1,4 @@
-import { Ul, Li, DecoDiv, Button, ItemTitle } from "./FeaturesList.styled"
+import { Ul, Li, DecoDiv, Button, ItemTitle, ClickMe } from "./FeaturesList.styled"
 
 import advantages from '../../../data/features.json'
 
@@ -20,7 +20,7 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
       rotate: -30
     },
     visible2: {
-      x: -600,
+      x: -800,
       rotate: -70
     },
     visible3: {
@@ -34,14 +34,14 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
       <Ul>
         {advantages.map(item => (
           <Li key={item.id} itemKey={item.id}>
-            <Button onClick={() => handleItemClick(item.id - 1)}>
+            <Button disabled={activeLi && true} onClick={() => handleItemClick(item.id - 1)}>
               <ItemTitle>{item.advantage}</ItemTitle>
-              {item.id === 1 && <FaRegHandshake style={{ width: 80, height: 80, fill: '#fff' }} />}
-              {item.id === 2 && <GoGear style={{ width: 80, height: 80, fill: '#fff' }} />}
-              {item.id === 3 && <IoIosTimer style={{ width: 80, height: 80, fill: '#fff' }} />}
-              {item.id === 4 && <GoChecklist style={{ width: 80, height: 80, fill: '#fff' }} />}
-              {item.id === 5 && <MdOutlineDesignServices style={{ width: 80, height: 80, fill: '#fff' }} />}
-              {item.id === 6 && <GiMagnifyingGlass style={{ width: 80, height: 80, fill: '#fff' }} />}
+              {item.id === 1 && <FaRegHandshake style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {item.id === 2 && <GoGear style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {item.id === 3 && <IoIosTimer style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {item.id === 4 && <GoChecklist style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {item.id === 5 && <MdOutlineDesignServices style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {item.id === 6 && <GiMagnifyingGlass style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
             </Button>
           </Li>
         ))}
@@ -52,8 +52,11 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
           animate={['visible', 'visible2', 'visible3']}
           variants={divAnim}
           transition={{duration: 1}}
-        >
-        </DecoDiv>}
+        />
+      }
+
+      <ClickMe style={{color: 'white'}}>Click me &#8593;</ClickMe>
+      
     </div>
   )
 }

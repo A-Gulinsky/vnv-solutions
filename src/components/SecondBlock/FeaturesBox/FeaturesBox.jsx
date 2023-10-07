@@ -32,30 +32,31 @@ export const FeaturesBox = ({id, activeLi}) => {
         >
           <DescriptionDataContainer>
             <AdvantageTitle>{advantages[id].advantage}</AdvantageTitle>
-            <AdvantageDescription>{advantages[id].description}</AdvantageDescription>
+            {advantages[id].id === 1 && <FaRegHandshake style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+            {advantages[id].id === 2 && <GoGear style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+            {advantages[id].id === 3 && <IoIosTimer style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+            {advantages[id].id === 4 && <GoChecklist style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+            {advantages[id].id === 5 && <MdOutlineDesignServices style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+            {advantages[id].id === 6 && <GiMagnifyingGlass style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
           </DescriptionDataContainer>
+            <AdvantageDescription>{advantages[id].description}</AdvantageDescription>
           
-          {advantages[id].id === 1 && <FaRegHandshake style={{ width: 80, height: 80 }} />}
-          {advantages[id].id === 2 && <GoGear style={{ width: 80, height: 80 }} />}
-          {advantages[id].id === 3 && <IoIosTimer style={{ width: 80, height: 80 }} />}
-          {advantages[id].id === 4 && <GoChecklist style={{ width: 80, height: 80 }} />}
-          {advantages[id].id === 5 && <MdOutlineDesignServices style={{ width: 80, height: 80 }} />}
-          {advantages[id].id === 6 && <GiMagnifyingGlass style={{ width: 80, height: 80 }} />}
         </MotionDataContainer>
         
         : (
           <DataContainer>
             <DescriptionDataContainer>
               <AdvantageTitle>{advantages[id].advantage}</AdvantageTitle>
-              <AdvantageDescription>{advantages[id].description}</AdvantageDescription>
+              {advantages[id].id === 1 && <FaRegHandshake style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {advantages[id].id === 2 && <GoGear style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {advantages[id].id === 3 && <IoIosTimer style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {advantages[id].id === 4 && <GoChecklist style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {advantages[id].id === 5 && <MdOutlineDesignServices style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
+              {advantages[id].id === 6 && <GiMagnifyingGlass style={{ width: 80, height: 80, fill: '#fff', filter: "drop-shadow(0px 0px 15px #4ea0f6)" }} />}
             </DescriptionDataContainer>
             
-            {advantages[id].id === 1 && <FaRegHandshake style={{ width: 80, height: 80 }} />}
-            {advantages[id].id === 2 && <GoGear style={{ width: 80, height: 80 }} />}
-            {advantages[id].id === 3 && <IoIosTimer style={{ width: 80, height: 80 }} />}
-            {advantages[id].id === 4 && <GoChecklist style={{ width: 80, height: 80 }} />}
-            {advantages[id].id === 5 && <MdOutlineDesignServices style={{ width: 80, height: 80 }} />}
-            {advantages[id].id === 6 && <GiMagnifyingGlass style={{ width: 80, height: 80 }} />}
+            <AdvantageDescription>{advantages[id].description}</AdvantageDescription>
+
           </DataContainer>
         )}
 
