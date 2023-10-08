@@ -8,7 +8,7 @@ export const VideoContainer = ({ children }) => {
     <Container>
       
       <Video src={videoBg} autoPlay loop muted />
-
+      
       {children}
     </Container>
   )

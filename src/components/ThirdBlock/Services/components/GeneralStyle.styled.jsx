@@ -43,6 +43,10 @@ export const H3 = styled(motion.h3)`
     background-color: #ffffffbb;
     box-shadow: 0px 0px 8px 2px #72aae5dd;
   }
+
+  @media screen and (max-width: 450px) {
+    font-size: 14px;
+  }
 `
 
 export const Ul = styled.ul`
@@ -69,6 +73,19 @@ export const P = styled.p`
 export const Img = styled(motion.img)`
   width: 300px;
   height: 280px;
+
+  @media screen and (max-width: 890px) {
+    width: 250px;
+    height: 230px;
+  }
+  @media screen and (max-width: 690px) {
+    width: 200px;
+    height: 180px;
+  }
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 `
 
 // LowerContainer
@@ -81,6 +98,14 @@ export const DescriptionP = styled(motion.p)`
 
   font-size: 18px;
   letter-spacing: 0.1em;
+
+  @media screen and (max-width: 980px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 860px) {
+    font-size: 14px;
+  }
 `
 
 export const iconStyle = {

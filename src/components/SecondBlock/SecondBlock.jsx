@@ -59,7 +59,7 @@ export const SecondBlock = () => {
 
         {/* TEST */}
         
-        <motion.div
+        {/* <motion.div
           style={{
             fontFamily: 'Raleway',
             fontWeight: 200,
@@ -105,7 +105,7 @@ export const SecondBlock = () => {
           variants={testAnim2}
         >
           ?
-        </motion.div>
+        </motion.div> */}
 
         
       </Container>

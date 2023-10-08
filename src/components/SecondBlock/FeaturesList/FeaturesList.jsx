@@ -7,9 +7,43 @@ import { FaRegHandshake } from "react-icons/fa6";
 import { IoIosTimer } from "react-icons/io";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { GiMagnifyingGlass } from "react-icons/gi";
+import { useEffect, useState } from "react";
 
 export const FeaturesList = ({ handleItemClick, activeLi }) => {
   
+  const [bollValueX, setBollValueX] = useState(-800)
+  const [bollValueY, setBollValueY] = useState(-70)
+
+  useEffect(() => {
+    // Функция обратного вызова, которая будет вызываться при изменении ширины экрана
+    const handleResize = () => {
+      if (window.innerWidth < 1022) {
+        setBollValueX(-500)
+      } else {
+        setBollValueX(-800)
+      }
+      
+      if (window.innerWidth < 870) {
+        setBollValueX(0)
+        setBollValueY(370)
+      } else {
+        setBollValueX(-500)
+        setBollValueY(-70)
+      }
+    };
+
+    // Добавляем слушатель события изменения размера окна
+    window.addEventListener("resize", handleResize);
+
+    // Вызываем handleResize для записи начального значения
+    handleResize();
+
+    // Удаляем слушателя события при размонтировании компонента
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const divAnim = {
     hidden: {
       x: 0,
@@ -20,12 +54,12 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
       rotate: -30
     },
     visible2: {
-      x: -800,
+      x: bollValueX,
       rotate: -70
     },
     visible3: {
-      rotate: 70,
-      y: -70
+      rotate: 180,
+      y: bollValueY
     }
   }
 

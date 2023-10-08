@@ -2,6 +2,6 @@
 export const OrderButton = () => {
 
   return (
-    <button type="button">Замовити</button>
+    <button type="button">Order now</button>
   )
 }

@@ -22,7 +22,26 @@ export const FeaturesBoxStyled = styled.div`
 
     width: 100%;
     height: 100%;
-    
+  }
+
+  @media screen and (max-width: 1022px) {
+    width: 350px;
+    height: 300px;
+  }
+
+  @media screen and (max-width: 780px) {
+    width: 450px;
+    height: 350px;
+  }
+
+  @media screen and (max-width: 511px) {
+    width: 350px;
+    height: 300px;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 280px;
+    height: 250px;
   }
 `
 
@@ -33,6 +52,14 @@ export const DataContainer = styled.div`
   justify-content: space-between;
 
   padding: 40px;
+
+  @media screen and (max-width: 1022px) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 866px) {
+    padding: 15px;
+  }
 `
 
 export const MotionDataContainer = styled(motion.div)`
@@ -42,6 +69,14 @@ export const MotionDataContainer = styled(motion.div)`
   justify-content: space-between;
 
   padding: 40px;
+
+  @media screen and (max-width: 1022px) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 866px) {
+    padding: 15px;
+  }
 `
 
 export const DescriptionDataContainer = styled.div`
@@ -90,4 +125,22 @@ export const AdvantageDescription = styled.b`
   line-height: 30px;
 
   z-index: 11;
+
+  @media screen and (max-width: 1022px) {
+    width: 250px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: 780px) {
+    width: 300px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 200px;
+    font-size: 14px;
+    line-height: 15px;
+  }
 `

@@ -7,7 +7,7 @@ export const ServicesContainer = styled.div`
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  height: 650px;
 
   padding: 0 40px;
 
@@ -24,5 +24,19 @@ export const ServicesContainer = styled.div`
     border-radius: 4px;
     background-color: #ffffffbb;
     box-shadow: 0px 0px 8px 2px #72a9e5;
+  }
+
+  @media screen and (max-width: 820px) {
+    height: 580px;
+  }
+
+  @media screen and (max-width: 440px) {
+    height: 620px;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 670px;
+    padding: 10px;
   }
 `

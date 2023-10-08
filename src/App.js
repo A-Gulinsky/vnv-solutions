@@ -8,9 +8,9 @@ import { FourthBlock } from 'components/FourthBlock/FourthBlock';
 function App() {
   return (
     <>
-      <FirstBlock />
-      <SecondBlock />
-      <ThirdBlock />
+      {/* <FirstBlock />
+      <SecondBlock /> */}
+      {/* <ThirdBlock /> */}
       <FourthBlock />
     </>
   );

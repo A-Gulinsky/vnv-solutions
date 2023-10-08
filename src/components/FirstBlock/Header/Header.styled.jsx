@@ -5,4 +5,8 @@ export const HeaderStyled = styled.header`
   align-items: center;
 
   padding: 40px 50px;
+
+  @media screen and (max-width: 380px) {
+    padding: 20px 20px;
+  }
 `

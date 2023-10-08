@@ -7,6 +7,23 @@ export const Ul = styled.ul`
   gap: 20px;
 
   padding: 35px 0;
+
+  @media screen and (min-width: 572px ) and (max-width:1075px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 571px) {
+    min-width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    overflow: auto;
+    scroll-snap-type: proximity;
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 510px) {
+    padding-bottom: 20px;
+  }
 `
 
 const activeBtn = ({active}) => {

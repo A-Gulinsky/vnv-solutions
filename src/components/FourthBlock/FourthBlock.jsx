@@ -1,13 +1,13 @@
 import { Section } from "components/SharedComponents/Section/Section"
-import { Container } from "./FourthBlock.styled"
+import { Container, Title } from "./FourthBlock.styled"
 import { ProjectList } from "./ProjectList/ProjectList"
 
 export const FourthBlock = () => {
 
   return (
-    <Section>
+    <Section bgColor={'#000000'}>
       <Container>
-        <h2 >Our Projects</h2>
+        <Title>Our Projects</Title>
 
         <ProjectList />
 

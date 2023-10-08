@@ -24,6 +24,18 @@ export const Ul = styled.ul`
     border-radius: 2px;
     background-color: #ffffff;
     box-shadow: 0px 0px 8px 2px #72a9e5;
+
+    @media screen and (max-width: 1140px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 870px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+      width: 320px;
   }
 `
 
@@ -31,7 +43,7 @@ const firstLi = {
   position: 'absolute',
   bottom: 40,
   left: 11,
-  otate: '341deg',
+  rotate: '341deg',
   zIndex: 10
 }
 
@@ -80,8 +92,35 @@ const sixthLi = {
   zIndex: 7
 }
 
-const setLiStyle = ({ itemKey }) => {
-    switch (itemKey) {
+// mob
+const fourthLiMob = {
+  position: 'absolute',
+  bottom: 87,
+  left: 147,
+  
+  rotate: '12deg',
+  zIndex: 8
+}
+
+const fifthLiMob = {
+  position: 'absolute',
+  bottom: 23,
+  left: 169,
+  
+  rotate: '8deg',
+  zIndex: 8
+}
+
+const sixthLiMob = {
+  position: 'absolute',
+  bottom: 157,
+  left: 185,
+  rotate: '21deg',
+  zIndex: 7
+}
+
+function setLiStyle({ itemKey }) {
+  switch (itemKey) {
     case 1:
       return firstLi;
     case 2:
@@ -89,14 +128,33 @@ const setLiStyle = ({ itemKey }) => {
     case 3:
       return thirdLi;
     case 4:
-        return fourthLi;
+      return fourthLi;
     case 5:
       return fifthLi;
     case 6:
       return sixthLi;
     default:
-      return `#000`
-    }
+      return `#000`;
+  }
+}
+
+function setLiStyleMob({ itemKey }) {
+  switch (itemKey) {
+    case 1:
+      return firstLi;
+    case 2:
+      return secondLi;
+    case 3:
+      return thirdLi;
+    case 4:
+      return fourthLiMob;
+    case 5:
+      return fifthLiMob;
+    case 6:
+      return sixthLiMob;
+    default:
+      return `#000`;
+  }
 }
 
 export const Li = styled.li`
@@ -112,12 +170,18 @@ export const Li = styled.li`
 
   transition: 150ms ease;
 
-  ${setLiStyle};
-
   &:hover {
     z-index: 15;
     opacity: 1;
     transform: translateY(-10px) scale(1.1);
+  }
+
+  @media screen and (min-width: 421px) {
+    ${setLiStyle};
+  }
+
+  @media screen and (max-width: 420px) {
+    ${setLiStyleMob}
   }
 `
 
@@ -167,4 +231,16 @@ export const ClickMe = styled.b`
   font-family: 'Raleway';
   letter-spacing: 0.02em;
   font-weight: 200;
+
+  @media screen and (max-width: 870px) {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 420px) {
+    bottom: -20px;
+    rotate: 0deg;
+  }
 `

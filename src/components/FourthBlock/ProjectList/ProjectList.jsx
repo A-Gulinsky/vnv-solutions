@@ -1,9 +1,24 @@
 import { useState } from "react"
-import { Item, Ul } from "./ProjectList.styled"
+import { Img, ImgContainer, Item, ItemH3, ItemTypeB, ItemTypeLi, ItemTypeP, ItemTypeUl, ProjectBox, SpanH3, Ul } from "./ProjectList.styled"
+
+import photo from 'assets/photo/project-3.png'
+import {ReactComponent as Svg} from 'assets/photo/project-2.svg'
+
+import { CiDeliveryTruck } from 'react-icons/ci'
+import { MdOutlineDesignServices } from 'react-icons/md'
+import { LiaStoreSolid } from 'react-icons/lia'
 
 import projects from 'data/projects.json'
 
 import { motion } from 'framer-motion'
+import { ActiveInfoBlock } from "./ActiveInfoBlock/ActiveInfoBlock"
+
+const svgStyle = {
+  width: 30,
+  height: 30,
+  fill: '#fff',
+  filter: 'drop-shadow(rgb(78, 160, 246) 0px 0px 8px)'
+}
 
 export const ProjectList = () => {
 
@@ -28,58 +43,41 @@ export const ProjectList = () => {
     }, 300)
   }
 
-  const infoAnimOpen = {
-    hidden: {
-      y: '-100%',
-      
-    },
-    visible: {
-      y: 0,
-      
-    }
-  }
-
-  const infoAnimClose = {
-    hidden: {
-      y: 0,
-      
-    },
-    visible: {
-      y: '-100%',
-      
-    }
-  }
-
   return (
-    <div style={{overflow: 'hidden'}}>
+    <ProjectBox>
 
       {!activeInfo && <Ul>
-        {projects.map((project, idx) => (
+        {projects.map(({project, type, id}, idx) => (
           <li key={idx}>
           <Item type="button" onClick={() => handleBtnClick(idx + 1)}>
-            <div>
-              <b>Photo</b>
-            </div>
-            <b>Name</b>
-            <b>Type</b>
+              <ImgContainer>
+              {id === 1 && <ItemH3><SpanH3>VOLSTINY</SpanH3> PROD.</ItemH3>}
+              {id === 2 && <Svg style={{width: '100%', height: 90, rotate: '354deg'}} />}
+              {id === 3 && <Img src={photo} alt="project logo"/>}
+            </ImgContainer>
+            <ItemTypeUl>
+                <li>
+                  <ItemTypeB>{project}</ItemTypeB>
+                </li>
+                <ItemTypeLi>
+                  <ItemTypeP>{type}</ItemTypeP>
+                  {type === 'Delivery Service' && <CiDeliveryTruck style={svgStyle} />}
+                  {type === 'Web-Service' && <MdOutlineDesignServices style={svgStyle} />}
+                  {type === 'Marketplace' && <LiaStoreSolid style={svgStyle} />}
+                </ItemTypeLi>
+            </ItemTypeUl>
           </Item>
         </li>
         ))}
       </Ul>}
 
-      {activeInfo && <motion.div variants={openAnim ? infoAnimOpen : infoAnimClose}
-          initial='hidden'
-          animate='visible'
-          transition={{ duration: 0.3 }}
-        style={{ width: '100%', height: '400px', backgroundColor: 'red' }}>
-        {activeIdx && <div>
-          <button type="button" onClick={handleBtnBack}>Back</button>
-          <h1>{projects[activeIdx - 1].project}</h1>
-          <p>{projects[activeIdx - 1].text}</p>
-        </div>}
-      </motion.div>}
-
-      
-    </div>
+      {activeInfo &&
+        <ActiveInfoBlock
+          handleBtnBack={handleBtnBack}
+          projects={projects}
+          activeIdx={activeIdx}
+          openAnim={openAnim}
+        />}
+    </ProjectBox>
   )
 }
