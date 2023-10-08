@@ -1,15 +1,28 @@
-import { Ul } from "./ButtonList.styled"
+import { Button, Ul } from "./ButtonList.styled"
 
 
-const buttons = ['first service', 'second service']
+const buttons = [
+  'SOFTWARE DEVELOPMENT',
+  'ERP',
+  'ONLINE-STORE DEVELOPMENT',
+  'SUPPORT AND UPDATES',
+  'BOT DEVELOPMENT',
+  'WEBSITE TRANSFERRING'
+]
 
-export const ButtonList = ({handleButtonClick}) => {
+export const ButtonList = ({handleButtonClick,idxService}) => {
 
   return (
     <Ul>
         {buttons.map((button, idx) => (
           <li key={idx}>
-            <button type="button" onClick={() => handleButtonClick(idx + 1)}>{button}</button>
+            <Button
+              type="button"
+              onClick={() => handleButtonClick(idx + 1)}
+              active={idxService === idx + 1 ? true : false}
+            >
+              {button}
+            </Button>
           </li>
         ))}
     </Ul>

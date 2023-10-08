@@ -1,14 +1,14 @@
 
-import photo from 'assets/photo/service-1.png'
+import photo from 'assets/photo/service-5.png'
 
 import { ServiceContainer,DescriptionP, Img, Li, P, Ul, UpperDiv, UpperItemsDiv, iconStyle, H3 } from '../GeneralStyle.styled'
 import { animTitle, animDescription, animImg,animLi } from '../AnimFirstVariant'
 
+import { GiAutomaticSas } from 'react-icons/gi'
+import { SiFuturelearn } from 'react-icons/si'
 import { MdOutlineHighQuality } from 'react-icons/md'
-import { FaShippingFast } from 'react-icons/fa'
-import { BiLeaf } from 'react-icons/bi'
 
-export const FirstService = () => {
+export const FifthService = () => {
 
   return (
     <ServiceContainer>
@@ -21,7 +21,7 @@ export const FirstService = () => {
             variants={animTitle}
             transition={{ duration: 1 }}
           >
-            SOFTWARE DEVELOPMENT
+            BOT DEVELOPMENT
           </H3>
           <Ul>
             <Li
@@ -30,8 +30,8 @@ export const FirstService = () => {
               transition={{ duration: 1, delay: 0.4}}
               variants={animLi}             
             >
-              <P>-Qualitatively</P>
-              <MdOutlineHighQuality style={iconStyle} />
+              <P>-Automation</P>
+              <GiAutomaticSas style={iconStyle} />
             </Li>
             <Li
               initial='hidden'
@@ -39,8 +39,8 @@ export const FirstService = () => {
               transition={{ duration: 1, delay: 0.8}}
               variants={animLi}
             >
-              <P>-Fast</P>
-              <FaShippingFast style={iconStyle} />
+              <P>-Innovation</P>
+              <SiFuturelearn style={iconStyle} />
             </Li>
             <Li
               initial='hidden'
@@ -48,8 +48,8 @@ export const FirstService = () => {
               transition={{ duration: 1, delay: 1.2}}
               variants={animLi}
             >
-              <P>-Promising</P>
-              <BiLeaf style={iconStyle} />
+              <P>-Quality</P>
+              <MdOutlineHighQuality style={iconStyle} />
             </Li>
           </Ul>
           <button type="button">I WANT</button>
@@ -71,11 +71,10 @@ export const FirstService = () => {
         animate='visible'
         transition={{ duration: 1}}
       >
-        Our software is aiming to solve your business problems and meet specific business needs.
-        Our experienced team can develop software for a wide range of industries and applications,
-        especially agriculture, finance, healthcare, and logistics, among others.
-        Our goal is to deliver high-quality software that will solve your business tasks and problems,
-        and optimize your working processes to help your business grow.
+        We specialize in developing customized bots that can automate tasks and improve efficiency.
+        We can create bots for a wide range of applications, including customer service, social media,
+        and sales, among others. Our goal is to provide you with cutting-edge technology that improves their
+        productivity and enhances their customer experience.
       </DescriptionP>
       
     </ServiceContainer>

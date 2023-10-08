@@ -2,13 +2,13 @@
 import { ServiceContainer,DescriptionP, Img, Li, P, Ul, UpperDiv, UpperItemsDiv, iconStyle, H3 } from '../GeneralStyle.styled'
 import { animTitle, animDescription, animImg,animLi } from '../AnimSecondVariant'
 
-import photo from 'assets/photo/service-2.png'
+import photo from 'assets/photo/service-4.png'
 
-import { MdImportantDevices } from 'react-icons/md'
-import { MdOutlineLeaderboard } from 'react-icons/md'
-import { GiSwordsPower } from 'react-icons/gi'
+import { MdPhoneInTalk } from 'react-icons/md'
+import { MdScheduleSend } from 'react-icons/md'
+import { PiListMagnifyingGlassThin } from 'react-icons/pi'
 
-export const SecondService = () => {
+export const FourthService = () => {
 
   return (
     <ServiceContainer>
@@ -23,17 +23,17 @@ export const SecondService = () => {
 
             width={'250px'}
           >
-            DEVELOPMENT OF A UNIQUE ERP SYSTEM
+            SUPPORT AND UPDATES
           </H3>
           <Ul>
-            <Li 
+            <Li
               variants={animLi}
               initial='hidden'
               animate='visible'
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <P>-Everyone Matters</P>
-              <MdImportantDevices style={iconStyle} />
+              <P>-Communication</P>
+              <MdPhoneInTalk style={iconStyle} />
             </Li>
             <Li 
               variants={animLi}
@@ -41,8 +41,8 @@ export const SecondService = () => {
               animate='visible'
               transition={{ duration: 1, delay: 0.8 }}
             >
-              <P>-Leadership is Here To Serve</P>
-              <MdOutlineLeaderboard style={iconStyle} />
+              <P>-Improvement</P>
+              <MdScheduleSend style={iconStyle} />
             </Li>
             <Li 
               variants={animLi}
@@ -50,8 +50,8 @@ export const SecondService = () => {
               animate='visible'
               transition={{ duration: 1, delay: 1.2 }}
             >
-              <P>-Resilient</P>
-              <GiSwordsPower style={iconStyle} />
+              <P>-Expertise</P>
+              <PiListMagnifyingGlassThin style={iconStyle} />
             </Li>
           </Ul>
           <button type="button">I WANT</button>
@@ -72,10 +72,11 @@ export const SecondService = () => {
         initial='hidden'
         animate='visible'
         transition={{ duration: 1 }}
-      >Developing customized ERP (Enterprise Resource Planning) systems that streamline your' business operations,
-        improve communication between departments and automate processes. Our ERP solutions are tailored to the
-        unique needs of your business and can be integrated with other software solutions to provide a comprehensive
-        business management system.
+      >
+        We offer ongoing support and updates to ensure that your software solutions remain up-to-date and fully
+        functional. Our support team is always ready to fix any issues or concerns that arise, so we provide regular
+        updates to improve performance and add new features if needed. Our goal is to provide our clients with peace
+        of mind and ensure that their software solutions continue to meet their needs over time.
       </DescriptionP>
 
     </ServiceContainer>

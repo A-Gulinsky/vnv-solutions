@@ -1,14 +1,15 @@
 
-import photo from 'assets/photo/service-1.png'
+
+import photo from 'assets/photo/service-3.png'
 
 import { ServiceContainer,DescriptionP, Img, Li, P, Ul, UpperDiv, UpperItemsDiv, iconStyle, H3 } from '../GeneralStyle.styled'
 import { animTitle, animDescription, animImg,animLi } from '../AnimFirstVariant'
 
+import { BsArrowUpRight } from 'react-icons/bs'
 import { MdOutlineHighQuality } from 'react-icons/md'
-import { FaShippingFast } from 'react-icons/fa'
-import { BiLeaf } from 'react-icons/bi'
+import { AiOutlineSchedule } from 'react-icons/ai'
 
-export const FirstService = () => {
+export const ThirdService = () => {
 
   return (
     <ServiceContainer>
@@ -21,7 +22,7 @@ export const FirstService = () => {
             variants={animTitle}
             transition={{ duration: 1 }}
           >
-            SOFTWARE DEVELOPMENT
+            ONLINE-STORE DEVELOPMENT
           </H3>
           <Ul>
             <Li
@@ -30,8 +31,8 @@ export const FirstService = () => {
               transition={{ duration: 1, delay: 0.4}}
               variants={animLi}             
             >
-              <P>-Qualitatively</P>
-              <MdOutlineHighQuality style={iconStyle} />
+              <P>-Continuous improvements</P>
+              <BsArrowUpRight style={iconStyle} />
             </Li>
             <Li
               initial='hidden'
@@ -39,8 +40,8 @@ export const FirstService = () => {
               transition={{ duration: 1, delay: 0.8}}
               variants={animLi}
             >
-              <P>-Fast</P>
-              <FaShippingFast style={iconStyle} />
+              <P>-Quality</P>
+              <MdOutlineHighQuality style={iconStyle} />
             </Li>
             <Li
               initial='hidden'
@@ -48,8 +49,8 @@ export const FirstService = () => {
               transition={{ duration: 1, delay: 1.2}}
               variants={animLi}
             >
-              <P>-Promising</P>
-              <BiLeaf style={iconStyle} />
+              <P>-Efficiency</P>
+              <AiOutlineSchedule style={iconStyle} />
             </Li>
           </Ul>
           <button type="button">I WANT</button>
@@ -71,11 +72,11 @@ export const FirstService = () => {
         animate='visible'
         transition={{ duration: 1}}
       >
-        Our software is aiming to solve your business problems and meet specific business needs.
-        Our experienced team can develop software for a wide range of industries and applications,
-        especially agriculture, finance, healthcare, and logistics, among others.
-        Our goal is to deliver high-quality software that will solve your business tasks and problems,
-        and optimize your working processes to help your business grow.
+        We offer online-store development services for clients who want to create an online presence for their business.
+        Our team can build and design a customized e-commerce website that is easy to use and provides
+        a seamless user experience. Our goal is to help you increase your online sales, expand customer base,
+        and improve overall business performance. Deep understanding and large experience allows us to build
+        the most conversional online-stores for you.
       </DescriptionP>
       
     </ServiceContainer>

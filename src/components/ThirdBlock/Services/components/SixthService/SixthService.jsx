@@ -2,13 +2,13 @@
 import { ServiceContainer,DescriptionP, Img, Li, P, Ul, UpperDiv, UpperItemsDiv, iconStyle, H3 } from '../GeneralStyle.styled'
 import { animTitle, animDescription, animImg,animLi } from '../AnimSecondVariant'
 
-import photo from 'assets/photo/service-2.png'
+import photo from 'assets/photo/service-6.png'
 
-import { MdImportantDevices } from 'react-icons/md'
-import { MdOutlineLeaderboard } from 'react-icons/md'
-import { GiSwordsPower } from 'react-icons/gi'
+import { GiSkills } from 'react-icons/gi'
+import { GiClassicalKnowledge } from 'react-icons/gi'
+import { SlLike } from 'react-icons/sl'
 
-export const SecondService = () => {
+export const SixthService = () => {
 
   return (
     <ServiceContainer>
@@ -23,7 +23,7 @@ export const SecondService = () => {
 
             width={'250px'}
           >
-            DEVELOPMENT OF A UNIQUE ERP SYSTEM
+            WEBSITE TRANSFERRING
           </H3>
           <Ul>
             <Li 
@@ -32,8 +32,8 @@ export const SecondService = () => {
               animate='visible'
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <P>-Everyone Matters</P>
-              <MdImportantDevices style={iconStyle} />
+              <P>-Skills</P>
+              <GiSkills style={iconStyle} />
             </Li>
             <Li 
               variants={animLi}
@@ -41,8 +41,8 @@ export const SecondService = () => {
               animate='visible'
               transition={{ duration: 1, delay: 0.8 }}
             >
-              <P>-Leadership is Here To Serve</P>
-              <MdOutlineLeaderboard style={iconStyle} />
+              <P>-Experience</P>
+              <GiClassicalKnowledge style={iconStyle} />
             </Li>
             <Li 
               variants={animLi}
@@ -50,8 +50,8 @@ export const SecondService = () => {
               animate='visible'
               transition={{ duration: 1, delay: 1.2 }}
             >
-              <P>-Resilient</P>
-              <GiSwordsPower style={iconStyle} />
+              <P>-Result</P>
+              <SlLike style={iconStyle} />
             </Li>
           </Ul>
           <button type="button">I WANT</button>
@@ -72,10 +72,11 @@ export const SecondService = () => {
         initial='hidden'
         animate='visible'
         transition={{ duration: 1 }}
-      >Developing customized ERP (Enterprise Resource Planning) systems that streamline your' business operations,
-        improve communication between departments and automate processes. Our ERP solutions are tailored to the
-        unique needs of your business and can be integrated with other software solutions to provide a comprehensive
-        business management system.
+      >
+        We offer website transferring services for clients who want to move their website from one platform to another.
+        Our team of developers can ensure that the transition is smooth and seamless, and that the website remains fully
+        functional throughout the process. Our goal is to minimize any disruptions to our clients' online presence and
+        ensure that their website continues to meet their business needs.
       </DescriptionP>
 
     </ServiceContainer>
