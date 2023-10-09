@@ -6,6 +6,7 @@ import { ThirdBlock } from 'components/ThirdBlock/ThirdBlock';
 import { FourthBlock } from 'components/FourthBlock/FourthBlock';
 import { FifthBlock } from 'components/FifthBlock/FifthBlock';
 import { SixthBlock } from 'components/SixthBlock/SixthBlock';
+import { SeventhBlock } from 'components/SeventhBlock/SeventhBlock';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
       <ThirdBlock />
       <FourthBlock />
       <FifthBlock /> */}
+      <FifthBlock /> 
       <SixthBlock />
+      <SeventhBlock />
     </>
   );
 }

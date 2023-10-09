@@ -32,7 +32,7 @@ export const CommunicationBtnList = ({activeChoice,handleChoiceClick}) => {
             type="button"
             onClick={() => handleChoiceClick('telegram')}
             active={activeChoice === 'telegram' && true}
-            style={{filter: 'drop-shadow(0px 0px 8px #036bf3d2)'}}
+            style={{filter: 'drop-shadow(0px 0px 8px #037bf3f2)'}}
           >
             <PiTelegramLogo style={btnStyle} />
           </Button>
