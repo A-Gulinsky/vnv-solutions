@@ -4,6 +4,7 @@ import './App.css';
 import { SecondBlock } from 'components/SecondBlock/SecondBlock';
 import { ThirdBlock } from 'components/ThirdBlock/ThirdBlock';
 import { FourthBlock } from 'components/FourthBlock/FourthBlock';
+import { FifthBlock } from 'components/FifthBlock/FifthBlock';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <FirstBlock />
       <SecondBlock /> */}
       {/* <ThirdBlock /> */}
-      <FourthBlock />
+      {/* <FourthBlock /> */}
+      <FifthBlock />
     </>
   );
 }
