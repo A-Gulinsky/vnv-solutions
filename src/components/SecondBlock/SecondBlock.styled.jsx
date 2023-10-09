@@ -28,5 +28,5 @@ export const Title = styled.h2`
   font-family: 'Raleway';
   font-weight: 200;
   font-size: 40px;
-  color: white;
+  color: #ffffffbb;
 `

@@ -9,10 +9,10 @@ import { FifthBlock } from 'components/FifthBlock/FifthBlock';
 function App() {
   return (
     <>
-      {/* <FirstBlock />
-      <SecondBlock /> */}
-      {/* <ThirdBlock /> */}
-      {/* <FourthBlock /> */}
+      <FirstBlock />
+      <SecondBlock />
+      <ThirdBlock />
+      <FourthBlock />
       <FifthBlock />
     </>
   );

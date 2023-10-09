@@ -1,17 +1,23 @@
 import { Section } from "components/SharedComponents/Section/Section"
-import { Container } from "./FifthBlock.styled"
+import { Container, Wrapper, InfoContainer, Title } from "./FifthBlock.styled"
 import { ContactForm } from "./ContactForm/ContactForm"
+import { Text } from "./Text/Text"
 
 export const FifthBlock = () => {
 
   return (
     <Section>
-      <Container>
-        <h2>CONTACT US</h2>
+      <Wrapper>
+        <Container>
+          <Title>CONTACT US</Title>
         
-        <ContactForm />
+          <InfoContainer>
+            <Text />
+            <ContactForm />
+          </InfoContainer>
 
-      </Container>
+        </Container>
+      </Wrapper>
     </Section>
   )
 }

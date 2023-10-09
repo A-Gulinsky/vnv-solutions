@@ -5,21 +5,18 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   width: 300px;
 
   padding: 25px;
 
-  border: 2px solid #615e5e;
+  border: 1px solid #615e5e;
+  background-color: #000000d4;
   border-radius: 4px;
-  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 
-  transition: 200ms;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.01);
-    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.75);
+  @media screen and (max-width: 380px) {
+    width: 280px;
+    padding: 25px 10px;
   }
 `
 
@@ -29,27 +26,6 @@ export const P = styled.p`
   font-weight: 600;
   text-align: center;
   color: #064ec1;
-`
-
-export const Input = styled.input`
-  display: block;
-  width: 250px;
-
-  padding: 10px 8px;
-
-  font-size: 16px;
-  color: #514d4d;
-
-  border: 1px solid black;
-  border-radius: 4px;
-
-  outline: transparent;
-  transition: 200ms;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 0px 5px #064ec1;
-  }
 `
 
 export const Button = styled.input`

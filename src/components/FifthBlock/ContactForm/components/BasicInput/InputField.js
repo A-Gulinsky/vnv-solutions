@@ -16,8 +16,4 @@ export const NumberOptions = {
   pattern: {
     message: `Incorrect format`
   },
-  maxLength: {
-    value: 10,
-    message: 'Max 10 length'
-  },
 }
