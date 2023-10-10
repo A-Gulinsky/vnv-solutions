@@ -5,6 +5,8 @@ import { NameOptions, NumberOptions } from "./InputField"
 import { BsPeople } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 
+import { errorAnim } from "../errorAnim"
+
 const svgStyle = {
   width: 30,
   height: 30,
@@ -12,6 +14,8 @@ const svgStyle = {
   fill: '#ffffffcf',
   filter: 'drop-shadow(0px 0px 5px #2f8aeb)'
 }
+
+
 
 export const BasicInput = ({register , errors}) => {
 
@@ -25,12 +29,11 @@ export const BasicInput = ({register , errors}) => {
           <BsPeople style={svgStyle} />
 
           <Input
-            autoComplete="off"
+            autoComplete="nope"
             {...register("name", NameOptions)}
-            style={{ borderColor: errors.name ? 'red' : 'initial' }}
             placeholder="Name"
           />
-          {errors.name && <P>{errors.name.message}</P>}
+          {errors.name && <P variants={errorAnim} initial='hidden' animate='visible' transition={{duration: 0.2}}>{errors.name.message}</P>}
         </Label>
       </BasicInputContainer>
       
@@ -43,11 +46,10 @@ export const BasicInput = ({register , errors}) => {
           <Input
             autoComplete="off"
             {...register("email", NumberOptions)}
-            style={{ borderColor: errors.email ? 'red' : 'initial' }}
             placeholder="Email"
             type="email"
           />
-          {errors.email && <P>{errors.email.message}</P>}
+          {errors.email && <P variants={errorAnim} initial='hidden' animate='visible' transition={{duration: 0.2}}>{errors.email.message}</P>}
         </Label>
       </BasicInputContainer>
     </>

@@ -12,11 +12,10 @@ import { EighthBlock } from 'components/EighthBlock/EighthBlock';
 function App() {
   return (
     <>
-      {/* <FirstBlock />
+      <FirstBlock />
       <SecondBlock />
       <ThirdBlock />
-      <FourthBlock />
-       */}
+      <FourthBlock />  
       <FifthBlock /> 
       <SixthBlock />
       <SeventhBlock />

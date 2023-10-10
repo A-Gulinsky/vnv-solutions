@@ -14,6 +14,7 @@ import { CommunicationBtnList } from "./components/CommunicationBtnList/Communic
 import { BasicInput } from "./components/BasicInput/BasicInput"
 import { TextArea } from "./components/TextArea/TextArea"
 
+import { toast } from "react-toastify"
 
 export const ContactForm = () => {
   
@@ -37,8 +38,7 @@ export const ContactForm = () => {
   // using dispatch in this func.
   const onSubmit = (data) => {
     
-    console.log(data)
-
+    toast.success(`Thank you, wait for the answer!`)
     reset()
   }
 

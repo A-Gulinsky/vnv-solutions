@@ -14,7 +14,7 @@ export const Header = () => {
     <HeaderStyled>
       <Logo />
       <NavMenu />
-      <OrderButton />
+      <OrderButton cssPadding={'7px 15px'} />
 
       {/* mobile menu */}
       <MobileMenuComponent />

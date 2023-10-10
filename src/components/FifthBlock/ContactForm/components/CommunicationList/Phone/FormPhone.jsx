@@ -1,6 +1,8 @@
-import { Input, Label } from "./FormPhone.styled"
+import { Input, Label, P } from "./FormPhone.styled"
 
 import { MdPhoneIphone } from 'react-icons/md'
+
+import { errorAnim } from "../../errorAnim"
 
 export const Phone = ({register, errors }) => {
 
@@ -26,6 +28,7 @@ export const Phone = ({register, errors }) => {
         placeholder="Phone"
         type="number"
       />
+      {errors.phone && <P variants={errorAnim} initial='hidden' animate='visible' transition={{duration: 0.2}}>{errors.phone.message}</P>}
     </Label>
   )
 }

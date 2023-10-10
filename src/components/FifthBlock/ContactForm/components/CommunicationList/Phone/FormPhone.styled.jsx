@@ -1,5 +1,7 @@
 import styled from "@emotion/styled"
 
+import { motion } from "framer-motion"
+
 export const Label = styled.label`
   display: flex;
   align-items: center;
@@ -10,6 +12,8 @@ export const Label = styled.label`
   border-radius: 4px;
 
   transition: 200ms;
+
+  position: relative;
 
   border: 1px solid #615e5e;
 
@@ -39,4 +43,20 @@ export const Input = styled.input`
   &::placeholder {
     color: white;
   }
+`
+
+export const P = styled(motion.p)`
+  margin-bottom: 5px;
+
+  font-weight: 600;
+  text-align: center;
+  color: #c10606;
+
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+
+  font-size: 12px;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 0.1em;
 `

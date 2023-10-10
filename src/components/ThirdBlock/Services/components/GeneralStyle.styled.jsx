@@ -25,7 +25,7 @@ export const UpperItemsDiv = styled.div`
 export const H3 = styled(motion.h3)`
   position: relative;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 300;
   text-align: center;
   color: #ffffffbb;
@@ -63,7 +63,7 @@ export const Li = styled(motion.li)`
 `
 
 export const P = styled.p`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-size: 16px;
   font-weight: 300;
 
@@ -92,7 +92,7 @@ export const Img = styled(motion.img)`
 
 
 export const DescriptionP = styled(motion.p)`
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   text-align: center;
   color: #ffffffb6;
 
@@ -105,6 +105,31 @@ export const DescriptionP = styled(motion.p)`
 
   @media screen and (max-width: 860px) {
     font-size: 14px;
+  }
+`
+
+export const ButtonIWant = styled.button`
+  background-color: transparent;
+  border: 1px solid #ffffffeb;
+  border-radius: 4px;
+  padding: 7px 25px;
+
+  color: #ffffffd4;
+
+  width: 70%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0px 0px 4px 1px #fffffff7;
+
+  cursor: pointer;
+
+  transition: 250ms;
+
+  &:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 4px 1px #fffffff7;
   }
 `
 

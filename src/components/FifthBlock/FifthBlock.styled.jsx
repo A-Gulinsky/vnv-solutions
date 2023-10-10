@@ -7,7 +7,6 @@ export const Container = styled.div`
   padding: 0px 15px;
   margin: 0 auto;
 
-  outline: 3px solid green;
 `
 
 export const InfoContainer = styled.div`
@@ -40,7 +39,7 @@ export const Title = styled.h2`
   margin-left: 40px;
   padding: 10px 0 10px 0;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 40px;
   color: #ffffffbb;

@@ -93,7 +93,7 @@ export const AdvantageTitle = styled.h3`
   margin-left: auto;
   margin-right: auto;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   letter-spacing: 0.2em;
   font-size: 20px;
 
@@ -119,7 +119,7 @@ export const AdvantageDescription = styled.b`
   margin-left: auto;
   margin-right: auto;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   font-size: 18px;
   letter-spacing: 0.1em;
   line-height: 30px;

@@ -4,7 +4,7 @@ import { Container } from "./EighthBlock.styled"
 export const EighthBlock = () => {
 
   return (
-    <footer>
+    <footer style={{backgroundColor: '#000'}}>
       <Container>
 
         <Contacts />

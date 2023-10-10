@@ -50,7 +50,7 @@ export const FaqQuestionDiv = styled.div`
 `
 
 export const FaqQuestionH3 = styled.h3`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 700;
   color: #ffffffcc;
   font-size: 16px;
@@ -75,7 +75,7 @@ export const AnswerContainer = styled.div`
 export const AnswerP = styled.p`
   text-align: center;
   color: #75a8c9d3;
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   letter-spacing: 0.1em;
   font-size: 16px;
 `

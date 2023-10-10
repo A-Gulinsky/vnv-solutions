@@ -36,6 +36,10 @@ export const AddressEmailA = styled.a`
     background-color: #ffffffb8;
   }
 
+  &:hover {
+    color: #fffffff4;
+  }
+
   @media screen and (max-width: 440px) {
     display: block;
     margin-bottom: 30px;

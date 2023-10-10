@@ -62,7 +62,7 @@ export const BackBtn = styled.button`
   background-color: transparent;
   border: none;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-size: 18px;
   color: white;
   text-transform: uppercase;
@@ -98,7 +98,7 @@ export const Title = styled.h3`
   margin-left: auto;
   margin-right: auto;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 200;
   font-size: 24px;
   color: white;

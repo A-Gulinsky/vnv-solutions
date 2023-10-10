@@ -29,18 +29,18 @@ export const P = styled.p`
 `
 
 export const Button = styled.input`
-  padding: 10px 15px;
+  padding: 10px 40px;
 
-  color: white;
+  color: #ffffffdc;
 
-  background-color: #1d6be7;
-  border: 1px solid transparent;
+  background-color: transparent;
+  border: 1px solid #ecebebe5;
   border-radius: 4px;
 
   transition: 150ms ease-in-out;
 
   &:hover,
   &:focus {
-    background-color: #064ec1;
+    transform: scale(1.06);
   }
 `

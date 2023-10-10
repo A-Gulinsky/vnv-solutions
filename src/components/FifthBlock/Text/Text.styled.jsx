@@ -12,7 +12,7 @@ export const TextContainer = styled.div`
 `
 
 export const TextTitle = styled.h3`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 600;
   color: #ffffffbb;
 
@@ -25,7 +25,7 @@ export const TextTitle = styled.h3`
 `
 
 export const TextP = styled.p`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 400;
   color: #cadbe8b9;
 

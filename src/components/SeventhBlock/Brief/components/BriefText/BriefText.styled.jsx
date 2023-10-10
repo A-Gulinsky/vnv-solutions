@@ -1,19 +1,19 @@
 import styled from "@emotion/styled";
 
 export const BriefTextH3 = styled.h3`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 500;
   letter-spacing: 0.1em;
-  line-height: 40px;
+  line-height: 38px;
   color: #ffffff99;
-  font-size: 34px;
+  font-size: 30px;
 
   max-width: 550px;
 
   @media screen and (max-width: 1030px) {
     max-width: 400px;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 30px;
   }
 
   @media screen and (max-width: 850px) {
@@ -43,7 +43,7 @@ export const BriefTextH3 = styled.h3`
 
 export const BriefTitleB = styled.b`
   color: #e7c680d3;
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   letter-spacing: 0.2em;
 
   @media screen and (max-width: 700px) {

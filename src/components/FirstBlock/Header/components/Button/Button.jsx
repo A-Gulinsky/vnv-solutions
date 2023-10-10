@@ -1,8 +1,8 @@
 import { ButtonStyled } from "./Button.styled"
 
-export const OrderButton = () => {
+export const OrderButton = ({cssPadding}) => {
 
   return (
-    <ButtonStyled type="button">Order now</ButtonStyled>
+    <ButtonStyled padding={cssPadding} type="button">Order now</ButtonStyled>
   )
 }

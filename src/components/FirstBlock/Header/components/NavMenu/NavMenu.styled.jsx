@@ -38,8 +38,8 @@ export const Link = styled.a`
   padding: 10px 0;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Raleway';
-  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 600;
   letter-spacing: 0.1em;
   color: #ffffffdc;
 
@@ -47,5 +47,9 @@ export const Link = styled.a`
 
   &:hover {
     color: #fff;
+  }
+
+  @media screen and (max-width: 920px) {
+    font-size: 16px;
   }
 `

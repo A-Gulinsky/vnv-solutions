@@ -1,6 +1,8 @@
 
 import { AiOutlineWhatsApp } from 'react-icons/ai'
-import { Input, Label } from './FormWhatsApp.styled'
+import { Input, Label, P } from './FormWhatsApp.styled'
+
+import { errorAnim } from '../../errorAnim'
 
 export const WhatsApp = ({register, errors}) => {
 
@@ -10,7 +12,7 @@ export const WhatsApp = ({register, errors}) => {
       <AiOutlineWhatsApp style={{ width: 30, height: 30, paddingRight: '10px', fill: '#ffffffd0',filter: 'drop-shadow(0px 0px 8px #04e10bd2)' }} />
 
       <Input
-        autoComplete="off"
+        autoComplete="nope"
         {...register("whatsapp", {
           required: 'Required field',
           pattern: {
@@ -26,6 +28,7 @@ export const WhatsApp = ({register, errors}) => {
         placeholder="WhatsApp"
         type="number"
       />
+      {errors.whatsapp && <P variants={errorAnim} initial='hidden' animate='visible' transition={{duration: 0.2}}>{errors.whatsapp.message}</P>}
     </Label>
   )
 }

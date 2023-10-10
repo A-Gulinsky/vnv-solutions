@@ -1,5 +1,7 @@
 import styled from "@emotion/styled"
 
+import { motion } from "framer-motion"
+
 export const BasicInputContainer = styled.div`
   width: 100%;
   display: flex;
@@ -11,7 +13,7 @@ export const BasicInputContainer = styled.div`
 
 export const InputTitle = styled.b`
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 20px;
@@ -20,6 +22,8 @@ export const InputTitle = styled.b`
 `
 
 export const Label = styled.label`
+  position: relative;
+
   display: flex;
   align-items: center;
   width: 90%;
@@ -59,10 +63,18 @@ export const Input = styled.input`
   outline: transparent;
 `
 
-export const P = styled.p`
+export const P = styled(motion.p)`
   margin-bottom: 5px;
 
   font-weight: 600;
   text-align: center;
-  color: #064ec1;
+  color: #c10606;
+
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+
+  font-size: 12px;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 0.1em;
 `

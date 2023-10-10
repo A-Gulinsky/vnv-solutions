@@ -25,7 +25,7 @@ export const LeftLinksA = styled.a`
 
   font-size: 20px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   color: #ffffffda;
 `
 
@@ -45,6 +45,6 @@ export const RightLinksA = styled.a`
 
   font-size: 18px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   color: #ffffffda;
 `

@@ -216,7 +216,7 @@ export const ItemTitle = styled.h3`
   text-align: center;
   padding: 5px;
 
-  font-family: 'Relative';
+  font-family: 'Relative',sans-serif;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #fff;
@@ -228,7 +228,7 @@ export const ClickMe = styled.b`
   left: 0;
   rotate: 352deg;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   letter-spacing: 0.02em;
   font-weight: 200;
 

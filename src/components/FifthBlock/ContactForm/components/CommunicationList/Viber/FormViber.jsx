@@ -1,6 +1,8 @@
 
 import { FaViber } from "react-icons/fa6"
-import { Input, Label } from "./FormViber.styled"
+import { Input, Label, P } from "./FormViber.styled"
+
+import { errorAnim } from "../../errorAnim"
 
 export const FormViber = ({register, errors}) => {
 
@@ -10,7 +12,7 @@ export const FormViber = ({register, errors}) => {
       <FaViber style={{ width: 30, height: 30, paddingRight: '10px', fill: '#ffffffd0',filter: 'drop-shadow(0px 0px 8px #7500ebd2)' }} />
 
       <Input
-        autoComplete="off"
+        autoComplete="nope"
         {...register("viber", {
           required: 'Required field',
           pattern: {
@@ -26,6 +28,7 @@ export const FormViber = ({register, errors}) => {
         placeholder="Viber"
         type="number"
       />
+      {errors.viber && <P variants={errorAnim} initial='hidden' animate='visible' transition={{duration: 0.2}}>{errors.viber.message}</P>}
     </Label>
   )
 }

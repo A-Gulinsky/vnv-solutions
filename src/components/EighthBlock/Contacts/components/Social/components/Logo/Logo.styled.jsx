@@ -16,7 +16,7 @@ export const Ul = styled.ul`
 `
 
 export const Text = styled.p`
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 16px;
   color: #ffffffdc;

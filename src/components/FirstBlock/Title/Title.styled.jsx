@@ -1,12 +1,14 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  padding: 200px 80px 250px;
+  padding: 100px 80px 350px;
 
   display: flex;
   gap: 20px;
   justify-content: center;
-  align-items: end;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
 
   @media screen and (max-width: 779px) {
     flex-direction: column;
@@ -20,7 +22,7 @@ export const Container = styled.div`
 `
 
 export const H1 = styled.h1`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 300;
 
   text-align: center;

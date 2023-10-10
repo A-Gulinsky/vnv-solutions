@@ -40,7 +40,7 @@ export const Button = styled.button`
   border-radius: 4px;
   outline: transparent;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   font-weight: 500;
   color: #ffffffbb;
   font-size: 12px;

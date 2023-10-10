@@ -111,7 +111,7 @@ export const ItemTypeB = styled.b`
 `
 
 export const ItemTypeP = styled.p`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-size: 20px;
   color: #fff;
 `
@@ -133,7 +133,7 @@ export const Img = styled.img`
 // FIRST ITEM ELEM
 
 export const ItemH3 = styled.h3`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
 
   font-size: 40px;
   letter-spacing: 0.1em;

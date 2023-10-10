@@ -7,5 +7,4 @@ export const Container = styled.div`
 
   background-color: black;
 
-  outline: 3px solid green;
 `

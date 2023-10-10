@@ -9,7 +9,7 @@ export const CommunicationContainer = styled.div`
 `
 
 export const InputTitle = styled.b`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 16px;

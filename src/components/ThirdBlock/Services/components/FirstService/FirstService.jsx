@@ -1,7 +1,7 @@
 
 import photo from 'assets/photo/service-1.png'
 
-import { ServiceContainer,DescriptionP, Img, Li, P, Ul, UpperDiv, UpperItemsDiv, iconStyle, H3 } from '../GeneralStyle.styled'
+import { ServiceContainer,DescriptionP, Img, Li, P, Ul, UpperDiv, UpperItemsDiv, iconStyle, H3, ButtonIWant } from '../GeneralStyle.styled'
 import { animTitle, animDescription, animImg,animLi } from '../AnimFirstVariant'
 
 import { MdOutlineHighQuality } from 'react-icons/md'
@@ -52,7 +52,7 @@ export const FirstService = () => {
               <BiLeaf style={iconStyle} />
             </Li>
           </Ul>
-          <button type="button">I WANT</button>
+          <ButtonIWant type="button">I WANT</ButtonIWant>
         </UpperItemsDiv>
 
         <Img

@@ -6,9 +6,7 @@ export const TextArea = ({register , errors}) => {
     <TextAreaContainer>
       <TextAreaTitle>Your Message</TextAreaTitle>
       <TextAreaStyled
-        autoComplete="off"
-        {...register("message", { required: "Message is required" })}
-        style={{ borderColor: errors.message ? 'red' : 'initial' }}
+        {...register("message")}
         placeholder="Your message"
       />
     </TextAreaContainer>

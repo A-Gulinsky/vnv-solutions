@@ -3,6 +3,9 @@ import { Container, Wrapper, InfoContainer, Title } from "./FifthBlock.styled"
 import { ContactForm } from "./ContactForm/ContactForm"
 import { Text } from "./Text/Text"
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export const FifthBlock = () => {
 
   return (
@@ -16,6 +19,7 @@ export const FifthBlock = () => {
             <ContactForm />
           </InfoContainer>
 
+          <ToastContainer theme="colored" autoClose={3000} />
         </Container>
       </Wrapper>
     </Section>

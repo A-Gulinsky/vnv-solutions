@@ -8,7 +8,6 @@ export const Container = styled.div`
   padding-bottom: 100px;
   margin: 0 auto;
 
-  outline: 3px solid green;
 `
 
 export const Wrapper = styled.div`
@@ -26,7 +25,7 @@ export const Title = styled.h2`
   padding: 40px;
   padding-bottom: 70px;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 200;
   letter-spacing: 0.1em;
   font-size: 40px;

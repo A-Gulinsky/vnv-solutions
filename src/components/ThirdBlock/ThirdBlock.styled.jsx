@@ -6,8 +6,6 @@ export const Container = styled.div`
   max-width: 1170px;
   margin: 0 auto;
 
-  outline: 3px solid green;
-
   z-index: 10;
 `
 
@@ -16,7 +14,7 @@ export const Title = styled.h2`
   margin-left: 40px;
   padding: 40px 0 60px 0;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 200;
   font-size: 40px;
   color: #ffffffbb;

@@ -5,5 +5,9 @@ export const Container = styled.div`
   padding: 0px 15px;
   margin: 0 auto;
 
-  outline: 3px solid green;
+`
+
+export const Wrapper = styled.div`
+  background: linear-gradient(0deg,#000000 0%, rgba(0,255,0,0) 20%);
+
 `

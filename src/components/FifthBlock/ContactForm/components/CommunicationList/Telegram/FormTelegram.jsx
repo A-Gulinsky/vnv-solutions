@@ -1,6 +1,9 @@
-import { Input, Label } from "./FormTelegram.styled"
+import { Input, Label, P } from "./FormTelegram.styled"
 
 import { PiTelegramLogo} from 'react-icons/pi'
+
+import { errorAnim } from "../../errorAnim"
+
 
 export const Telegram = ({register, errors}) => {
 
@@ -10,7 +13,7 @@ export const Telegram = ({register, errors}) => {
       <PiTelegramLogo style={{ width: 30, height: 30, paddingRight: '10px', fill: '#ffffffd0',filter: 'drop-shadow(0px 0px 8px #036bf3d2)' }} />
 
       <Input
-        autoComplete="off"
+        autoComplete="nope"
         {...register("telegram", {
           required: 'Required field',
           pattern: {
@@ -26,6 +29,7 @@ export const Telegram = ({register, errors}) => {
         placeholder="Telegram"
         type="text"
       />
+      {errors.telegram && <P variants={errorAnim} initial='hidden' animate='visible' transition={{duration: 0.2}}>{errors.telegram.message}</P>}
     </Label>
   )
 }

@@ -10,7 +10,7 @@ export const TextAreaContainer = styled.div`
 `
 
 export const TextAreaTitle = styled.b`
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 20px;
