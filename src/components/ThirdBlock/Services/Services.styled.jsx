@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
-export const ServicesContainer = styled.div`
+import { motion } from "framer-motion";
+
+export const ServicesContainer = styled(motion.div)`
 
   position: relative;
 

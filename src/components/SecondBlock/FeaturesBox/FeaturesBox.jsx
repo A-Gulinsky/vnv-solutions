@@ -8,6 +8,18 @@ import { IoIosTimer } from "react-icons/io";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { GiMagnifyingGlass } from "react-icons/gi";
 
+// left Block Anim
+const testAnim4 = {
+  hidden: {
+    x: -80,
+    opacity: 0
+  },
+  visible: {
+    x: 0,
+    opacity: 1
+  }
+}
+
 export const FeaturesBox = ({id, activeLi}) => {
 
   const testAnim = {
@@ -22,7 +34,10 @@ export const FeaturesBox = ({id, activeLi}) => {
   }
 
   return (
-    <FeaturesBoxStyled>
+    <FeaturesBoxStyled
+      variants={testAnim4}
+      transition={{duration: 2}}
+    > 
       {activeLi ?
         <MotionDataContainer
           variants={testAnim}

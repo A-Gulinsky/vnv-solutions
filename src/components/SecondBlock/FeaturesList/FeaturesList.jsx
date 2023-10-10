@@ -63,9 +63,36 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
     }
   }
 
+  // list block anim
+  const testAnim4 = {
+    hidden: {
+      x: 80,
+      opacity: 0
+    },
+    visible: {
+      x: 0,
+      opacity: 1
+    }
+  }
+
+  // click me Anim
+  const testAnim6 = {
+    hidden: {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1
+    }
+  }
+
   return (
     <div style={{ display: 'flex', position: 'relative'}}>
-      <Ul>
+      <Ul
+      
+        variants={testAnim4}
+        transition={{duration: 2}}
+        
+      >
         {advantages.map(item => (
           <Li key={item.id} itemKey={item.id}>
             <Button disabled={activeLi && true} onClick={() => handleItemClick(item.id - 1)}>
@@ -89,7 +116,13 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
         />
       }
 
-      <ClickMe style={{color: 'white'}}>Click me &#8593;</ClickMe>
+      <ClickMe
+        variants={testAnim6}
+        transition={{duration: 0.5, delay: 1.8}}
+        style={{ color: 'white' }}
+      >
+        Click me &#8593;
+      </ClickMe>
       
     </div>
   )

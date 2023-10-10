@@ -5,12 +5,15 @@ import { FaqContainer } from "./FAQ/FaqContainer"
 export const SixthBlock = () => {
 
   return (
-    <Section bgColor={'#000000'}>
+    
+    <Section bgColor={'#000000'}>    
       <Container>
+        
         <Title>F.A.Q.</Title>
-
         <FaqContainer />
+        
       </Container>
     </Section>
+    
   )
 }

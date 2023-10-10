@@ -1,4 +1,6 @@
-import { MobileButtonStyled } from "./MobileButton.styled"
+import { MobileButtonStyled, svgStyle } from "./MobileButton.styled"
+
+import { HiMenu } from 'react-icons/hi'
 
 export const MobileButton = ({handleMobileMenuClick}) => {
 
@@ -7,7 +9,7 @@ export const MobileButton = ({handleMobileMenuClick}) => {
       type="button"
       onClick={handleMobileMenuClick}
     >
-      MENU
+      <HiMenu style={svgStyle}/>
     </MobileButtonStyled>
   )
 }

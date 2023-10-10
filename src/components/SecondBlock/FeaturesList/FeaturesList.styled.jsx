@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 import { motion } from "framer-motion";
 
-export const Ul = styled.ul`
+export const Ul = styled(motion.ul)`
   position: relative;
 
   width: 400px;
@@ -12,6 +12,8 @@ export const Ul = styled.ul`
   height: 300px;
   display: flex;
   gap: 10px;
+
+  z-index: 0;
 
   &::before {
     content: '';
@@ -222,7 +224,7 @@ export const ItemTitle = styled.h3`
   color: #fff;
 `
 
-export const ClickMe = styled.b`
+export const ClickMe = styled(motion.b)`
   position: absolute;
   bottom: -26px;
   left: 0;

@@ -1,12 +1,14 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   max-width: 1170px;
   padding: 40px 15px;
   margin: 0 auto;
+  overflow: hidden;
 `
 
-export const ItemContainer = styled.div`
+export const ItemContainer = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,7 +23,7 @@ export const ItemContainer = styled.div`
   }
 `
 
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
   text-align: center;
   padding: 40px 0 80px 0;
 

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 import { motion } from "framer-motion";
 
-export const FeaturesBoxStyled = styled.div`
+export const FeaturesBoxStyled = styled(motion.div)`
   position: relative;
   width: 450px;
   height: 400px;

@@ -4,7 +4,19 @@ import { FeaturesList } from "./FeaturesList/FeaturesList"
 import { useState } from "react"
 import { Container, ItemContainer, Title } from "./SecondBlock.styled"
 
-import { motion, reverseEasing } from "framer-motion"
+import { motion } from "framer-motion"
+
+// TITLE ANIM
+const testAnim5 = {
+  hidden: {
+    y: -60,
+    opacity: 0
+  },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+}
 
 export const SecondBlock = () => {
 
@@ -49,11 +61,23 @@ export const SecondBlock = () => {
   }
 
   return (
-    <Section bgColor='#000000'>
-      <Container>
-        <Title>Why Us ?</Title>
+    <Section
+      bgColor='#000000'
+    >
+      <Container
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ amount: 1, once: true }}
+      >
+        <Title
+          variants={testAnim5}
+          transition={{duration: 1.5}}
+        >Why Us ?</Title>
         <ItemContainer>
-          <FeaturesBox id={id} activeLi={activeLi} />
+          <FeaturesBox
+            id={id}
+            activeLi={activeLi}
+          />
           <FeaturesList handleItemClick={handleItemClick} activeLi={activeLi} />
         </ItemContainer>
 

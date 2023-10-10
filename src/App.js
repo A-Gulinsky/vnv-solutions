@@ -10,6 +10,7 @@ import { SeventhBlock } from 'components/SeventhBlock/SeventhBlock';
 import { EighthBlock } from 'components/EighthBlock/EighthBlock';
 
 function App() {
+
   return (
     <>
       <FirstBlock />

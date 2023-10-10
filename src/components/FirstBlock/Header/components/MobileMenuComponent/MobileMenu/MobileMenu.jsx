@@ -1,4 +1,8 @@
-import { MobileMenuContainer } from "./MobileMenu.styled";
+import { MobileMenuContainer, MobileMenuStyledContainer } from "./MobileMenu.styled";
+import { BottomElements } from "./components/BottomElements/BottomElements";
+import { MobileOrderButton } from "./components/MobileOrderButton/MobileOrderButton";
+import { Navigation } from "./components/Navigation/Navigation";
+import { TopElements } from "./components/TopElements/TopElements";
 
 export const MobileMenu = ({ onClose, isOpen }) => {
 
@@ -9,16 +13,16 @@ export const MobileMenu = ({ onClose, isOpen }) => {
   visible: {
     x: 0
   }
-};
+  };
 
-const closeMenu = {
+  const closeMenu = {
   hidden: {
     x: 0
   },
   visible: {
     x: '105%'
   }
-};
+  };
 
   return (
     <MobileMenuContainer
@@ -27,8 +31,12 @@ const closeMenu = {
       animate='visible'
       transition={{duration: 0.4}}
     >
-      <button type="button" onClick={onClose}>back</button>
-      TEST
+      
+        <TopElements onClose={onClose} />
+        <Navigation />
+        <MobileOrderButton />
+        <BottomElements />
+      
     </MobileMenuContainer>
   );
 }
