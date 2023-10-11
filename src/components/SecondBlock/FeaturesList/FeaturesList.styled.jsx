@@ -10,9 +10,7 @@ export const Ul = styled(motion.ul)`
   width: 400px;
   height: 300px;
 
-  background-color: #000;
-
-  z-index: 0;
+  z-index: 4;
 
   &::before {
     content: '';
