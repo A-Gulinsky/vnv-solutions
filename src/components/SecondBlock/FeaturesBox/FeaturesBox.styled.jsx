@@ -11,6 +11,8 @@ export const FeaturesBoxStyled = styled(motion.div)`
 
   z-index: 10;
 
+  
+
   &::before {
     content: '';
     position: absolute;
@@ -23,7 +25,6 @@ export const FeaturesBoxStyled = styled(motion.div)`
     border-radius: 6px;
 
     @media screen and (min-width: 450px) {
-      filter: drop-shadow(0px 0px 9px #a0c3ea);
       clip-path: polygon(11% 0, 100% 0, 100% 71%, 100% 81%, 90% 93%, 37% 93%, 28% 100%, 0 100%, 0 23%, 0 0);
     }
 
@@ -47,10 +48,16 @@ export const FeaturesBoxStyled = styled(motion.div)`
     height: 300px;
   }
 
+  @media screen and (min-width: 450px) {
+    filter: drop-shadow(0px 0px 9px #a0c3ea);
+  }
+
   @media screen and (max-width: 390px) {
     width: 280px;
     height: 250px;
   }
+
+  
 `
 
 export const DataContainer = styled.div`  
