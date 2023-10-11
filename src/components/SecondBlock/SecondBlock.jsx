@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 // components
 import { Section } from "components/SharedComponents/Section/Section"
@@ -15,6 +15,8 @@ export const SecondBlock = () => {
 
   const [id, setId] = useState(0)
   const [activeLi, setActiveLi] = useState(false)
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
 
   const handleItemClick = (id) => {
     setId(id)
@@ -26,17 +28,30 @@ export const SecondBlock = () => {
     }, 1500)
   }
 
+  // 
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Section bgColor='#000000' id='whyus'>
       <Container
-        initial='hidden'
-        whileInView='visible'
-        viewport={{ amount: 1, once: true }}
+        initial={viewportWidth > 879 ? 'hidden' : ''}
+        whileInView={viewportWidth > 879 ? 'visible' : ''}
+        viewport={{ amount: viewportWidth > 879 ? 1 : 0, once: true }}
       >
 
         <Title
-          variants={titleAnim}
-          transition={{duration: 1.5}}
+          variants={viewportWidth > 879 ? titleAnim : {}}
+          transition={{ duration: viewportWidth > 879 ? 1.5 : 0 }}
         >
           Why Us ?
         </Title>

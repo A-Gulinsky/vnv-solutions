@@ -24,7 +24,7 @@ function App() {
       <EighthBlock />
 
       {/* lead magnet */}
-      <LeadMagnet />
+      {/* <LeadMagnet /> */}
     </>
   );
 }

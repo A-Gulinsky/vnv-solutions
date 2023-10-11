@@ -9,7 +9,7 @@ export const VideoContainer = ({ children }) => {
   return (
     <Container>
       
-      <Video src={videoBg} autoPlay loop muted />
+      <Video src={videoBg} autoPlay loop muted playsinline />
       
       {children}
     </Container>
