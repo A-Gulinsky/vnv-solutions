@@ -32,7 +32,7 @@ export const BriefTextH3 = styled.h3`
   }
 
   @media screen and (max-width: 700px) {
-    text-align: center;
+    text-align: left;
   }
 
   @media screen and (max-width: 430px) {
