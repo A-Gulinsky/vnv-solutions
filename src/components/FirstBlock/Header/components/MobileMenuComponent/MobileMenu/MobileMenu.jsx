@@ -22,7 +22,7 @@ export const MobileMenu = ({ onClose, isOpen }) => {
     >
       
         <TopElements onClose={onClose} />
-        <Navigation />
+        <Navigation onClose={onClose} />
         <MobileOrderButton />
         <BottomElements />
       

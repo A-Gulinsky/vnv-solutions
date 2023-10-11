@@ -1,25 +1,25 @@
 // emotion
 import { Li, Link, Ul } from "./Navigation.styled"
 
-export const Navigation = () => {
+export const Navigation = ({onClose}) => {
 
   return (
       <Ul>
         <Li>
-          <Link href="/">Why Us</Link>
+          <Link href="#whyus" onClick={onClose}>Why Us</Link>
         </Li>
         <Li>
-          <Link href="/">
+          <Link href="#services" onClick={onClose}>
             Services
           </Link>
         </Li>
         <Li>
-          <Link href="/">
+          <Link href="#projects" onClick={onClose}>
             Our Projects
           </Link>
         </Li>
         <Li>
-          <Link href="">
+          <Link href="#contact" onClick={onClose}>
             Contact Us
           </Link>
         </Li>

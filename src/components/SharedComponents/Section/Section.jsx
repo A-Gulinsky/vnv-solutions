@@ -1,8 +1,8 @@
 
-export const Section = ({children, bgColor}) => {
+export const Section = ({children,id, bgColor}) => {
 
   return (
-    <section style={{backgroundColor: bgColor}}>
+    <section style={{backgroundColor: bgColor}} id={id}>
       {children}
     </section>
   )

@@ -15,7 +15,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export const FifthBlock = () => {
 
   return (
-    <Section>
+    <Section id='contact'>
       <Wrapper>
         <Container
           initial='hidden'

@@ -7,20 +7,20 @@ export const NavMenu = () => {
     <Nav>
       <Ul>
         <Li>
-          <Link href="/">Why Us</Link>
+          <Link href="#whyus">Why Us</Link>
         </Li>
         <Li>
-          <Link href="/">
+          <Link href="#services">
             Services
           </Link>
         </Li>
         <Li>
-          <Link href="/">
+          <Link href="#projects">
             Our Projects
           </Link>
         </Li>
         <Li>
-          <Link href="">
+          <Link href="#contact">
             Contact Us
           </Link>
         </Li>

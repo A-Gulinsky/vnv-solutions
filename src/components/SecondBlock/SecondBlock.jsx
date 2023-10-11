@@ -27,7 +27,7 @@ export const SecondBlock = () => {
   }
 
   return (
-    <Section bgColor='#000000'>
+    <Section bgColor='#000000' id='whyus'>
       <Container
         initial='hidden'
         whileInView='visible'
