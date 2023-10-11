@@ -11,6 +11,9 @@ import { TopElements } from "./components/TopElements/TopElements";
 // anim
 import { openMenu, closeMenu } from "./anim";
 
+// props
+import PropTypes from 'prop-types'
+
 export const MobileMenu = ({ onClose, isOpen }) => {
 
   return (
@@ -28,4 +31,9 @@ export const MobileMenu = ({ onClose, isOpen }) => {
       
     </MobileMenuContainer>
   );
+}
+
+MobileMenu.propTypes = {
+  onClose: PropTypes.func,
+  isOpen: PropTypes.bool
 }

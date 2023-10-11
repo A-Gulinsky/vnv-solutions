@@ -16,6 +16,9 @@ import { GiMagnifyingGlass } from "react-icons/gi";
 // anim
 import { listBlockAnim, clickMeAnim } from "./anim";
 
+// props
+import PropTypes from 'prop-types'
+
 export const FeaturesList = ({ handleItemClick, activeLi }) => {
   
   // changes the direction of the ball at viewport
@@ -107,4 +110,9 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
       
     </div>
   )
+}
+
+FeaturesList.propTypes = {
+  handleItemClick: PropTypes.func,
+  activeLi: PropTypes.bool
 }

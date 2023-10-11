@@ -3,18 +3,20 @@ import { Section } from "components/SharedComponents/Section/Section"
 import { Services } from "./Services/Services"
 
 // emotion
-import { Container, Title } from "./ThirdBlock.styled"
+import { Container, Title, Wrapper } from "./ThirdBlock.styled"
 
 export const ThirdBlock = () => {
   
   return (
     <Section bgColor={'#000000'} id='services'>
-      <Container>
+      <Wrapper>
+        <Container>
         
-        <Title>Services</Title>
-        <Services />
+          <Title>Services</Title>
+          <Services />
 
-      </Container>
+        </Container>
+      </Wrapper>
     </Section>
   )
 }

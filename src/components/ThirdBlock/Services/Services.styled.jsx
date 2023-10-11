@@ -29,18 +29,12 @@ export const ServicesContainer = styled(motion.div)`
   }
 
   @media screen and (max-width: 820px) {
-    height: 580px;
-  }
-
-  @media screen and (max-width: 440px) {
-    padding: 20px;
-
     height: 620px;
   }
 
   @media screen and (max-width: 400px) {
     padding: 10px;
 
-    height: 670px;
+    height: 690px;
   }
 `

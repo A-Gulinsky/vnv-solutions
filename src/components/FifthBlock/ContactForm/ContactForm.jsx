@@ -19,13 +19,15 @@ import { toast } from "react-toastify"
 // anim
 import { formAnim } from "./anim"
 
+// props
+import PropTypes from 'prop-types'
+
 
 export const ContactForm = () => {
   
   const [communicationChoice, setCommunicationChoice] = useState('phone')
 
   const handleChoiceClick = (type) => {
-    console.log(type)
     setCommunicationChoice(type)
   }
 
@@ -66,3 +68,8 @@ export const ContactForm = () => {
     </Form>
   )
 }
+
+CommunicationBtnList.propTypes = {
+  activeChoice: PropTypes.string,
+  handleChoiceClick: PropTypes.func,
+};

@@ -20,7 +20,7 @@ export const Ul = styled(motion.ul)`
     bottom: -10px;
     left: -13px;
 
-    width: 120%;
+    width: 100%;
     height: 4px;
     rotate: 351deg;
 

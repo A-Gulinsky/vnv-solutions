@@ -15,6 +15,9 @@ import { GiMagnifyingGlass } from "react-icons/gi";
 // anim
 import { firstAnim, changeAnim } from "./anim";
 
+// props
+import PropTypes from 'prop-types'
+
 export const FeaturesBox = ({id, activeLi}) => {
 
   return (
@@ -60,4 +63,10 @@ export const FeaturesBox = ({id, activeLi}) => {
 
     </FeaturesBoxStyled>
   )
+}
+
+
+FeaturesBox.propTypes = {
+  id: PropTypes.number,
+  activeLi: PropTypes.bool
 }

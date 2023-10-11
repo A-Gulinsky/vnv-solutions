@@ -89,3 +89,12 @@ export const AnswerP = styled.p`
   letter-spacing: 0.1em;
   font-size: 16px;
 `
+
+export const svgIcon = {
+  width: 17,
+  height: 35,
+  fill: '#ffffffcc',
+  position: 'absolute',
+  top: 5,
+  right: 5
+}

@@ -10,6 +10,9 @@ import projectImgThree from 'assets/photo/project-img-3.png'
 // anim
 import { infoAnimOpen, infoAnimClose } from "./anim"
 
+// props
+import PropTypes from 'prop-types'
+
 export const ActiveInfoBlock = ({activeIdx,handleBtnBack,projects,openAnim}) => {
 
   return (
@@ -35,3 +38,10 @@ export const ActiveInfoBlock = ({activeIdx,handleBtnBack,projects,openAnim}) => 
     </ActiveInfoContainer>
   )
 }
+
+ActiveInfoBlock.propTypes = {
+  activeIdx: PropTypes.number,
+  handleBtnBack: PropTypes.func, 
+  projects: PropTypes.arrayOf(PropTypes.object),
+  openAnim: PropTypes.bool
+};

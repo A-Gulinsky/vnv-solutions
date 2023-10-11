@@ -99,7 +99,7 @@ export const DescriptionP = styled(motion.p)`
   font-size: 18px;
   letter-spacing: 0.1em;
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1010px) {
     font-size: 16px;
   }
 

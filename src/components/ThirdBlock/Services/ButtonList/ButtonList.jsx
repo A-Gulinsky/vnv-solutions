@@ -2,6 +2,9 @@
 // emotion
 import { Button, Ul } from "./ButtonList.styled"
 
+// props
+import PropTypes from 'prop-types'
+
 // render btn titles
 const buttons = [
   'SOFTWARE DEVELOPMENT',
@@ -31,4 +34,9 @@ export const ButtonList = ({handleButtonClick,idxService}) => {
       ))}
     </Ul>
   )
+}
+
+ButtonList.propTypes = {
+  handleButtonClick: PropTypes.func,
+  idxService: PropTypes.number
 }

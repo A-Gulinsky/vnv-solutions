@@ -1,6 +1,9 @@
 // emotion
 import { Li, Link, Ul } from "./Navigation.styled"
 
+// props
+import PropTypes from 'prop-types'
+
 export const Navigation = ({onClose}) => {
 
   return (
@@ -25,4 +28,8 @@ export const Navigation = ({onClose}) => {
         </Li>
       </Ul>
   )
+}
+
+Navigation.propTypes = {
+  onClose: PropTypes.func,
 }
