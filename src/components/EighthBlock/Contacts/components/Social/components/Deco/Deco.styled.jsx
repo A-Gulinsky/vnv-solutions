@@ -14,6 +14,7 @@ export const LeftFirstSpan = styled.span`
 
   width: 3px;
   height: 100%;
+  
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.78);
   box-shadow: 0px 0px 4px 1px #72aae5b0;

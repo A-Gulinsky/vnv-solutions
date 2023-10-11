@@ -19,7 +19,8 @@ export const Label = styled.label`
 
   border: 1px solid #615e5e;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0px 0px 2px 2px #d5d2d24a;
   }
 `

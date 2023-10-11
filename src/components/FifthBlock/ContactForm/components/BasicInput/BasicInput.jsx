@@ -1,19 +1,18 @@
-import { BasicInputContainer, Input, InputTitle, Label, P } from "./BasicInput.styled"
 
+// emotion
+import { svgStyle,BasicInputContainer, Input, InputTitle, Label, P } from "./BasicInput.styled"
+
+// form input settings
 import { NameOptions, NumberOptions } from "./InputField"
 
+// react icons
 import { BsPeople } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 
+// anim
 import { errorAnim } from "../errorAnim"
 
-const svgStyle = {
-  width: 30,
-  height: 30,
-  paddingRight: '10px',
-  fill: '#ffffffcf',
-  filter: 'drop-shadow(0px 0px 5px #2f8aeb)'
-}
+
 
 
 

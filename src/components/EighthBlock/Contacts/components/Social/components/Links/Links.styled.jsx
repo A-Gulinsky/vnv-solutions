@@ -1,7 +1,8 @@
+
+// emotion
 import styled from "@emotion/styled";
 
 // Left Links
-
 export const LeftLinksUl = styled.ul`
   display: flex;
   flex-direction: column;
@@ -15,16 +16,15 @@ export const Li = styled.li`
   
   transition: 200ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.03);
   }
 `
 
 export const LeftLinksA = styled.a`
-  text-decoration: none;
-
   font-size: 20px;
-
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: #ffffffda;
 `
@@ -41,10 +41,8 @@ export const RightLinksUl = styled.ul`
 `
 
 export const RightLinksA = styled.a`
-  text-decoration: none;
-
-  font-size: 18px;
-
   font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  text-decoration: none;
   color: #ffffffda;
 `

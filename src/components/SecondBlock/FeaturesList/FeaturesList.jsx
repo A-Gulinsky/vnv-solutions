@@ -1,21 +1,29 @@
+import { useEffect, useState } from "react";
+
+// emotion
 import { Ul, Li, DecoDiv, Button, ItemTitle, ClickMe } from "./FeaturesList.styled"
 
+// data
 import advantages from '../../../data/features.json'
 
+// react icons
 import { GoGear, GoChecklist } from "react-icons/go";
 import { FaRegHandshake } from "react-icons/fa6";
 import { IoIosTimer } from "react-icons/io";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { GiMagnifyingGlass } from "react-icons/gi";
-import { useEffect, useState } from "react";
+
+// anim
+import { listBlockAnim, clickMeAnim } from "./anim";
 
 export const FeaturesList = ({ handleItemClick, activeLi }) => {
   
+  // changes the direction of the ball at viewport
   const [bollValueX, setBollValueX] = useState(-800)
   const [bollValueY, setBollValueY] = useState(-70)
 
   useEffect(() => {
-    // Функция обратного вызова, которая будет вызываться при изменении ширины экрана
+    // Callback function that will be called when the screen width changes
     const handleResize = () => {
       if (window.innerWidth < 1022) {
         setBollValueX(-500)
@@ -32,18 +40,16 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
       }
     };
 
-    // Добавляем слушатель события изменения размера окна
     window.addEventListener("resize", handleResize);
 
-    // Вызываем handleResize для записи начального значения
     handleResize();
 
-    // Удаляем слушателя события при размонтировании компонента
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  // boll anim
   const divAnim = {
     hidden: {
       x: 0,
@@ -63,36 +69,10 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
     }
   }
 
-  // list block anim
-  const testAnim4 = {
-    hidden: {
-      x: 80,
-      opacity: 0
-    },
-    visible: {
-      x: 0,
-      opacity: 1
-    }
-  }
-
-  // click me Anim
-  const testAnim6 = {
-    hidden: {
-      opacity: 0
-    },
-    visible: {
-      opacity: 1
-    }
-  }
-
   return (
     <div style={{ display: 'flex', position: 'relative'}}>
-      <Ul
-      
-        variants={testAnim4}
-        transition={{duration: 2}}
+      <Ul variants={listBlockAnim} transition={{duration: 2}}>
         
-      >
         {advantages.map(item => (
           <Li key={item.id} itemKey={item.id}>
             <Button disabled={activeLi && true} onClick={() => handleItemClick(item.id - 1)}>
@@ -106,6 +86,7 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
             </Button>
           </Li>
         ))}
+
       </Ul>
       {activeLi &&
         <DecoDiv
@@ -117,7 +98,7 @@ export const FeaturesList = ({ handleItemClick, activeLi }) => {
       }
 
       <ClickMe
-        variants={testAnim6}
+        variants={clickMeAnim}
         transition={{duration: 0.5, delay: 1.8}}
         style={{ color: 'white' }}
       >

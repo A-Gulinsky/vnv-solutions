@@ -1,3 +1,5 @@
+
+// emotion
 import { BriefTextH3, BriefTitleB } from "./BriefText.styled"
 
 export const BriefText = () => {

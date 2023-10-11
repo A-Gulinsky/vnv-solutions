@@ -1,34 +1,32 @@
 import styled from "@emotion/styled";
 
 export const TextAreaContainer = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  width: 100%;
 `
 
 export const TextAreaTitle = styled.b`
   font-family: 'Raleway',sans-serif;
   font-weight: 400;
-  letter-spacing: 0.1em;
   font-size: 20px;
-
   color: #ffffffc0;
+  letter-spacing: 0.1em;
 `
 
 export const TextAreaStyled = styled.textarea`
-  resize: none;
-
   width: 90%;
   height: 80px;
+  padding: 10px;
 
-  background-color: transparent;
   color: #ffffffcc;
 
-  outline: none;
-
-  padding: 10px;
+  background-color: transparent;
   border-radius: 2px;
+
+  resize: none;
+  outline: none;
 `

@@ -11,14 +11,14 @@ export const ParentMenuContainer = styled.div`
 `
 
 export const MobileMenuContainer = styled(motion.div)`
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  overflow: hidden;
-
-  z-index: 999;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000;
+  
+  overflow: hidden;
+  z-index: 999;
 `

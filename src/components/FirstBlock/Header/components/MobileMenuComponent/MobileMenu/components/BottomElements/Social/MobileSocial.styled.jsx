@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const MobileSocialContainer = styled.div`
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,3 +49,10 @@ export const MobileLinkA = styled.a`
   color: transparent;
 
 `
+
+// svg style
+export const svgStyle = {
+  fill: '#fff',
+  width: 50,
+  height: 50
+}

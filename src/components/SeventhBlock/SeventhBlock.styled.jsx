@@ -4,10 +4,9 @@ import theme from 'assets/photo/theme-1.jpg'
 
 export const Container = styled.div`
   max-width: 1170px;
+  margin: 0 auto;
   padding: 30px 15px;
   padding-bottom: 100px;
-  margin: 0 auto;
-
 `
 
 export const Wrapper = styled.div`
@@ -21,7 +20,6 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.h2`
-  text-align: center;
   padding: 40px;
   padding-bottom: 70px;
 
@@ -30,6 +28,7 @@ export const Title = styled.h2`
   letter-spacing: 0.1em;
   font-size: 40px;
   color: #ffffffbb;
+  text-align: center;
 
   @media screen and (max-width: 530px) {
     font-size: 32px;

@@ -1,34 +1,28 @@
 import { useState } from "react"
-import { Img, ImgContainer, Item, ItemH3, ItemTypeB, ItemTypeLi, ItemTypeP, ItemTypeUl, ProjectBox, SpanH3, Ul } from "./ProjectList.styled"
 
+// emotion
+import { svgStyle, Img, ImgContainer, Item, ItemH3, ItemTypeB, ItemTypeLi, ItemTypeP, ItemTypeUl, ProjectBox, SpanH3, Ul } from "./ProjectList.styled"
+
+// img / svg
 import photo from 'assets/photo/project-3.png'
 import {ReactComponent as Svg} from 'assets/photo/project-2.svg'
-
 import { CiDeliveryTruck } from 'react-icons/ci'
 import { MdOutlineDesignServices } from 'react-icons/md'
 import { LiaStoreSolid } from 'react-icons/lia'
 
+// data
 import projects from 'data/projects.json'
 
-import { motion } from 'framer-motion'
+// components
 import { ActiveInfoBlock } from "./ActiveInfoBlock/ActiveInfoBlock"
-
-const svgStyle = {
-  width: 30,
-  height: 30,
-  fill: '#fff',
-  filter: 'drop-shadow(rgb(78, 160, 246) 0px 0px 8px)'
-}
 
 export const ProjectList = () => {
 
   const [activeInfo, setActiveInfo] = useState(false)
   const [activeIdx, setActiveIdx] = useState(1)
-
   const [openAnim, setOpenAnim] = useState(false)
 
   const handleBtnClick = (idx) => {
-    console.log(idx)
     setActiveInfo(true)
     setActiveIdx(idx)
 

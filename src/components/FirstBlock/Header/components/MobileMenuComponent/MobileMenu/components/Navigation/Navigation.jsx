@@ -1,4 +1,5 @@
-import { Li, Link, Nav, Ul } from "./Navigation.styled"
+// emotion
+import { Li, Link, Ul } from "./Navigation.styled"
 
 export const Navigation = () => {
 

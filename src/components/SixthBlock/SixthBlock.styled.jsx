@@ -11,7 +11,6 @@ export const Container = styled(motion.div)`
 `
 
 export const Title = styled.h2`
-  text-align: center;
   padding: 40px 40px 90px;
 
   font-family: 'Raleway',sans-serif;
@@ -19,4 +18,5 @@ export const Title = styled.h2`
   letter-spacing: 0.1em;
   font-size: 40px;
   color: #ffffffbb;
+  text-align: center;
 `

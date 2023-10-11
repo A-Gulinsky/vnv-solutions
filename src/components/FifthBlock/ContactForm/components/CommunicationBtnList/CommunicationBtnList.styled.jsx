@@ -13,7 +13,6 @@ export const InputTitle = styled.b`
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 16px;
-
   color: #ffffffc0;
 `
 
@@ -25,9 +24,9 @@ export const Ul = styled.ul`
 `
 
 export const Button = styled.button`
-  padding: 10px;
   margin: 0;
-  border: none;
+  padding: 10px;
+
   background-color: transparent;
   border: 1px solid transparent;
   border: ${props => props.active && '1px solid #ffffffc7'};
@@ -37,7 +36,8 @@ export const Button = styled.button`
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.07);
   }
 `

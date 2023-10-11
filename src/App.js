@@ -8,6 +8,7 @@ import { FifthBlock } from 'components/FifthBlock/FifthBlock';
 import { SixthBlock } from 'components/SixthBlock/SixthBlock';
 import { SeventhBlock } from 'components/SeventhBlock/SeventhBlock';
 import { EighthBlock } from 'components/EighthBlock/EighthBlock';
+import { LeadMagnet } from 'components/LeadMagnet/LeadMagnet';
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
       <SixthBlock />
       <SeventhBlock />
       <EighthBlock />
+
+      {/* lead magnet */}
+      <LeadMagnet />
     </>
   );
 }

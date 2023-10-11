@@ -1,32 +1,16 @@
+
+// emotion
 import { ActiveInfoContainer, AdditionalContainer, BackBtn, Img, Title, DescriptionP } from "./ActiveInfoBlock.styled"
 
+// img
 import projectImgOne from 'assets/photo/project-img-1.png'
 import projectImgTwo from 'assets/photo/project-img-2.png'
 import projectImgThree from 'assets/photo/project-img-3.png'
 
+// anim
+import { infoAnimOpen, infoAnimClose } from "./anim"
+
 export const ActiveInfoBlock = ({activeIdx,handleBtnBack,projects,openAnim}) => {
-
-  const infoAnimOpen = {
-    hidden: {
-      y: '-110%',
-      
-    },
-    visible: {
-      y: 0,
-      
-    }
-  }
-
-  const infoAnimClose = {
-    hidden: {
-      y: 0,
-      
-    },
-    visible: {
-      y: '-110%',
-      
-    }
-  }
 
   return (
    

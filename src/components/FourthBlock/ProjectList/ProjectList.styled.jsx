@@ -8,26 +8,25 @@ export const ProjectBox = styled.div`
   align-items: center;
 
   width: 80%;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
 
   overflow: hidden;
 
-  height: 500px;
-
   &::before {
     content: '';
     position: absolute;
     bottom: 0px;
-    left: 0;
-
-    z-index: 10;
+    left: 0;  
 
     width: 100%;
     height: 4px;
-    border-radius: 2px;
+
+    z-index: 10;;
 
     background-color: #ffffff8b;
+    border-radius: 2px;
     box-shadow: 0px 0px 8px 1px #72aae5bf;
 
     @media screen and (max-width: 690px) {
@@ -40,8 +39,9 @@ export const ProjectBox = styled.div`
   }
 
   @media screen and (max-width: 690px) {
-    overflow-x: scroll;
     justify-content: flex-start;
+
+    overflow-x: scroll;
   }
 `
 
@@ -59,26 +59,24 @@ export const Ul = styled.ul`
 `
 
 export const Item = styled.button`
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   width: 250px;
   height: 350px;
-
   padding: 10px 10px 20px 10px;
+
+  background-color: transparent;
   border: 2px solid #ffffffc2;
   border-radius: 2px;
-  background-color: transparent;
   box-shadow: 0px 0px 6px 1px #72a9e5;
-
 
   cursor: pointer;
   transition: 200ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.04);
     box-shadow: 0px 0px 6px 1px #d9d9d9;
   }
@@ -105,9 +103,9 @@ export const ItemTypeLi = styled.li`
 `
 
 export const ItemTypeB = styled.b`
-  letter-spacing: 0.1em;
-  color: #fff;
   font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.1em;
 `
 
 export const ItemTypeP = styled.p`
@@ -120,7 +118,6 @@ export const ImgContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: 70%;
 `
@@ -134,7 +131,6 @@ export const Img = styled.img`
 
 export const ItemH3 = styled.h3`
   font-family: 'Raleway',sans-serif;
-
   font-size: 40px;
   letter-spacing: 0.1em;
   text-align: center;
@@ -157,3 +153,12 @@ export const SpanH3 = styled.span`
     font-size: 30px;
   }
 `
+
+// svg
+
+export const svgStyle = {
+  width: 30,
+  height: 30,
+  fill: '#fff',
+  filter: 'drop-shadow(rgb(78, 160, 246) 0px 0px 8px)'
+}

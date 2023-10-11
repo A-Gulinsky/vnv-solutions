@@ -21,3 +21,27 @@ export const Text = styled(motion.p)`
   letter-spacing: 0.1em;
   text-transform: uppercase;
 `
+
+// SVG Style
+export const logoStyle1 = {
+  width: 50,
+  height: 50,
+  fill: '#ffffffc7',
+  filter: 'drop-shadow(0px 0px 5px #007bff)',
+  transform: 'translateX(17px)'
+}
+
+export const logoStyle2 = {
+  width: 50,
+  height: 50,
+  fill: '#ffffffc7',
+  filter: 'drop-shadow(0px 0px 5px #007bff)'
+}
+
+export const logoStyle3 = {
+  width: 50,
+  height: 50,
+  fill: '#ffffffc7',
+  filter: 'drop-shadow(0px 0px 5px #007bff)',
+  transform: 'translateX(-17px)'
+}

@@ -1,6 +1,8 @@
+
+// emotion
 import { Button, Ul } from "./ButtonList.styled"
 
-
+// render btn titles
 const buttons = [
   'SOFTWARE DEVELOPMENT',
   'ERP',
@@ -12,23 +14,21 @@ const buttons = [
 
 export const ButtonList = ({handleButtonClick,idxService}) => {
 
-  // button
-  
-
   return (
     <Ul>
-        {buttons.map((button, idx) => (
-          <li key={idx}>
-            <Button
-              transition={{duration: 1}}
-              type="button"
-              onClick={() => handleButtonClick(idx + 1)}
-              active={idxService === idx + 1 ? true : false}
-            >
-              {button}
-            </Button>
-          </li>
-        ))}
+
+      {buttons.map((button, idx) => (
+        <li key={idx}>
+          <Button
+            transition={{duration: 1}}
+            type="button"
+            onClick={() => handleButtonClick(idx + 1)}
+            active={idxService === idx + 1 ? true : false}
+          >
+            {button}
+          </Button>
+        </li>
+      ))}
     </Ul>
   )
 }

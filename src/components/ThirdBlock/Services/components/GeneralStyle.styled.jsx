@@ -127,7 +127,8 @@ export const ButtonIWant = styled.button`
 
   transition: 250ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.06);
     box-shadow: 0px 0px 4px 1px #fffffff7;
   }

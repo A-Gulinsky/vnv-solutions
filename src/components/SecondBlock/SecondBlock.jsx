@@ -1,22 +1,15 @@
+import { useState } from "react"
+
+// components
 import { Section } from "components/SharedComponents/Section/Section"
 import { FeaturesBox } from "./FeaturesBox/FeaturesBox"
 import { FeaturesList } from "./FeaturesList/FeaturesList"
-import { useState } from "react"
+
+// emotion
 import { Container, ItemContainer, Title } from "./SecondBlock.styled"
 
-import { motion } from "framer-motion"
-
-// TITLE ANIM
-const testAnim5 = {
-  hidden: {
-    y: -60,
-    opacity: 0
-  },
-  visible: {
-    y: 0,
-    opacity: 1
-  }
-}
+// anim
+import { titleAnim } from "./anim"
 
 export const SecondBlock = () => {
 
@@ -33,46 +26,21 @@ export const SecondBlock = () => {
     }, 1500)
   }
 
-  const testAnim = {
-    hidden: {
-      opacity: 0.2,
-      x: 0,
-      y: 0
-    },
-    visible: {
-      opacity: 1,
-      x: 500,
-      y: 170,
-      rotate: '180deg'
-    }
-  }
-  const testAnim2 = {
-    hidden: {
-      opacity: 0.2,
-      x: 0,
-      y: 0
-    },
-    visible: {
-      opacity: 1,
-      x: 300,
-      y: 150,
-      rotate: '100deg'
-    }
-  }
-
   return (
-    <Section
-      bgColor='#000000'
-    >
+    <Section bgColor='#000000'>
       <Container
         initial='hidden'
         whileInView='visible'
         viewport={{ amount: 1, once: true }}
       >
+
         <Title
-          variants={testAnim5}
+          variants={titleAnim}
           transition={{duration: 1.5}}
-        >Why Us ?</Title>
+        >
+          Why Us ?
+        </Title>
+
         <ItemContainer>
           <FeaturesBox
             id={id}
@@ -81,57 +49,6 @@ export const SecondBlock = () => {
           <FeaturesList handleItemClick={handleItemClick} activeLi={activeLi} />
         </ItemContainer>
 
-        {/* TEST */}
-        
-        {/* <motion.div
-          style={{
-            fontFamily: 'Raleway',
-            fontWeight: 200,
-            fontSize: 40,
-            color: 'white',
-            position: 'absolute',
-            top: '0',
-            left: '0',
-            pointerEvents: 'none'
-          }}
-          initial="hidden"
-          animate={['visible']}
-          transition={{
-            duration: 60,
-            repeat: Infinity,
-            repeatType: 'reverse'
-          }}
-
-          variants={testAnim}
-        >
-          ?
-        </motion.div>
-        
-        <motion.div
-          style={{
-            fontFamily: 'Raleway',
-            fontWeight: 200,
-            fontSize: 40,
-            color: 'white',
-            position: 'absolute',
-            bottom: '40%',
-            left: '40%',
-            pointerEvents: 'none'
-          }}
-          initial="hidden"
-          animate={['visible']}
-          transition={{
-            duration: 60,
-            repeat: Infinity,
-            repeatType: 'reverse'
-          }}
-
-          variants={testAnim2}
-        >
-          ?
-        </motion.div> */}
-
-        
       </Container>
     </Section>
   )

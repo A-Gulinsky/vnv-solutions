@@ -8,11 +8,10 @@ export const Form = styled(motion.form)`
   align-items: center;
   gap: 20px;
   width: 300px;
-
   padding: 25px;
 
-  border: 1px solid #615e5e;
   background-color: #000000d4;
+  border: 1px solid #615e5e;
   border-radius: 4px;
 
   @media screen and (max-width: 380px) {

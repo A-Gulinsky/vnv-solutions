@@ -5,13 +5,12 @@ import { motion } from "framer-motion";
 export const Ul = styled(motion.ul)`
   position: relative;
 
-  width: 400px;
-
-  background-color: #000;
-
-  height: 300px;
   display: flex;
   gap: 10px;
+  width: 400px;
+  height: 300px;
+
+  background-color: #000;
 
   z-index: 0;
 
@@ -20,11 +19,13 @@ export const Ul = styled(motion.ul)`
     position: absolute;
     bottom: -10px;
     left: -13px;
+
     width: 120%;
-    rotate: 351deg;
     height: 4px;
-    border-radius: 2px;
+    rotate: 351deg;
+
     background-color: #ffffff;
+    border-radius: 2px;
     box-shadow: 0px 0px 8px 2px #72a9e5;
 
     @media screen and (max-width: 1140px) {
@@ -41,6 +42,7 @@ export const Ul = styled(motion.ul)`
   }
 `
 
+// styled li
 const firstLi = {
   position: 'absolute',
   bottom: 40,
@@ -94,7 +96,7 @@ const sixthLi = {
   zIndex: 7
 }
 
-// mob
+// styled mob li
 const fourthLiMob = {
   position: 'absolute',
   bottom: 87,
@@ -121,6 +123,7 @@ const sixthLiMob = {
   zIndex: 7
 }
 
+// funcs for li
 function setLiStyle({ itemKey }) {
   switch (itemKey) {
     case 1:
@@ -160,19 +163,18 @@ function setLiStyleMob({ itemKey }) {
 }
 
 export const Li = styled.li`
-  border: 1px solid #fff;
-  outline: transparent;
-
   width: 100px;
   height: 130px;
 
-  opacity: 0.95;
-
+  border: 1px solid #fff;
   border-radius: 4px;
 
+  opacity: 0.95;
+  outline: transparent;
   transition: 150ms ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     z-index: 15;
     opacity: 1;
     transform: translateY(-10px) scale(1.1);
@@ -191,58 +193,63 @@ export const Button = styled.button`
   width: 100%;
   height: 100%;
   padding: 0;
+
   background-color: #000;
-  outline: transparent;
   border: none;
   box-shadow: 0px 0px 8px 2px #72a9e5;
+
+  outline: transparent;
 
   cursor: pointer;
 `
 
 export const DecoDiv = styled(motion.div)`
-
   position: absolute;
   top: 154px;
   right: 90px;
-
-  z-index: 3;
-
   width: 20px;
   height: 20px;
-  border-radius: 100%;
+  
   background-color: #ffffff;
+  border-radius: 100%;
   box-shadow: 0px 0px 8px 6px #72a9e5;
+
+  z-index: 3;
 `
 
 export const ItemTitle = styled.h3`
-  text-align: center;
   padding: 5px;
 
   font-family: 'Relative',sans-serif;
   font-weight: 400;
-  letter-spacing: 0.05em;
   color: #fff;
+  text-align: center;
+  letter-spacing: 0.05em;
 `
 
 export const ClickMe = styled(motion.b)`
   position: absolute;
   bottom: -26px;
   left: 0;
+  
   rotate: 352deg;
 
   font-family: 'Raleway',sans-serif;
-  letter-spacing: 0.02em;
   font-weight: 200;
+  letter-spacing: 0.02em;
 
   @media screen and (max-width: 870px) {
     left: 50%;
-    transform: translateX(-50%);
     bottom: -10px;
+
     font-size: 20px;
+
+    transform: translateX(-50%);
   }
 
   @media screen and (max-width: 420px) {
     bottom: -20px;
+
     rotate: 0deg;
   }
 `

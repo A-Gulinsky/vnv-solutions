@@ -1,14 +1,8 @@
-import { MobileLinkA, MobileSocialContainer, MobileLinkLi, UpperMobileUl, BottomMobileUl } from "./MobileSocial.styled"
+import { MobileLinkA, MobileSocialContainer, MobileLinkLi, UpperMobileUl, BottomMobileUl, svgStyle } from "./MobileSocial.styled"
 
 import { FaLinkedinIn,FaTiktok } from 'react-icons/fa'
 import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi'
 import { LiaTelegramPlane } from 'react-icons/lia'
-
-const svgStyle = {
-  fill: '#fff',
-  width: 50,
-  height: 50
-}
 
 export const MobileSocial = () => {
 

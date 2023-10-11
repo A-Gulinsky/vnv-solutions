@@ -1,4 +1,8 @@
+
+// component
 import { Contacts } from "./Contacts/Contacts"
+
+// emotion
 import { Container } from "./EighthBlock.styled"
 
 export const EighthBlock = () => {

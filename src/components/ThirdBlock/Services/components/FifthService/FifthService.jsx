@@ -1,9 +1,14 @@
 
+// img
 import photo from 'assets/photo/service-5.png'
 
+// emotion
 import { ServiceContainer,DescriptionP, Img, Li, P, Ul, UpperDiv, UpperItemsDiv, iconStyle, H3, ButtonIWant } from '../GeneralStyle.styled'
-import { animTitle, animDescription, animImg,animLi } from '../AnimFirstVariant'
 
+// anim
+import { animTitle, animDescription, animImg, animLi } from '../AnimFirstVariant'
+
+// icons
 import { GiAutomaticSas } from 'react-icons/gi'
 import { SiFuturelearn } from 'react-icons/si'
 import { MdOutlineHighQuality } from 'react-icons/md'

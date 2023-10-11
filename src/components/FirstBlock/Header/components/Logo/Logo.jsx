@@ -1,79 +1,13 @@
-import { LogoStyled, Text, Ul } from "./Logo.styled"
+// emotion
+import { LogoStyled, Text, Ul, logoStyle1, logoStyle2, logoStyle3 } from "./Logo.styled"
 
+// svg icons
 import { ReactComponent as LogoV } from 'assets/photo/logo/V.svg'
 import { ReactComponent as LogoN } from 'assets/photo/logo/N.svg'
 
+// framer / anim
 import { motion } from "framer-motion"
-
-// style
-const logoStyle1 = {
-  fill: '#ffffffc7',
-  width: 50,
-  height: 50,
-  filter: 'drop-shadow(0px 0px 5px #007bff)',
-  transform: 'translateX(17px)'
-}
-
-const logoStyle2 = {
-  fill: '#ffffffc7',
-  width: 50,
-  height: 50,
-  filter: 'drop-shadow(0px 0px 5px #007bff)'
-}
-
-const logoStyle3 = {
-  fill: '#ffffffc7',
-  width: 50,
-  height: 50,
-  filter: 'drop-shadow(0px 0px 5px #007bff)',
-  transform: 'translateX(-17px)'
-}
-
-// anim
-
-const firstL = {
-  hidden: {
-    opacity: 0,
-    x: -30
-  },
-  visible: {
-    opacity: 1,
-    x: 0
-  }
-}
-
-const animN = {
-  hidden: {
-    opacity: 0,
-    y: -30
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  }
-}
-
-const lastL = {
-  hidden: {
-    opacity: 0,
-    x: 30
-  },
-  visible: {
-    opacity: 1,
-    x: 0
-  }
-}
-
-const textAnim = {
-  hidden: {
-    opacity: 0,
-    y: 30
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  }
-}
+import { firstL, animN, lastL, textAnim } from "./anim"
 
 // filter: 'drop-shadow(0px 0px 5px #ff0000)'
 

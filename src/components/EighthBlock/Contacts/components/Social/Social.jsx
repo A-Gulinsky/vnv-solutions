@@ -1,4 +1,8 @@
+
+// emotion
 import { SocialContainer } from "./Social.styled"
+
+// components
 import { LeftDeco } from "./components/Deco/LeftDeco"
 import { RightDeco } from "./components/Deco/RightDeco"
 import { LeftLinks } from "./components/Links/LeftLinks"

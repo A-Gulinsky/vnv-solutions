@@ -42,3 +42,10 @@ export const MobileLinkA = styled.a`
   color: transparent;
 
 `
+
+// svg
+export const svgStyle = {
+  fill: '#fff',
+  width: 30,
+  height: 30
+}

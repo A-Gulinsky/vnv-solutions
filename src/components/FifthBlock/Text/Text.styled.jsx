@@ -16,10 +16,9 @@ export const TextContainer = styled.div`
 export const TextTitle = styled(motion.h3)`
   font-family: 'Raleway',sans-serif;
   font-weight: 600;
-  color: #ffffffbb;
-
-  letter-spacing: 0.2em;
   font-size: 34px;
+  color: #ffffffbb;
+  letter-spacing: 0.2em;
 
   @media screen and (max-width: 860px) {
     font-size: 26px;
@@ -27,14 +26,13 @@ export const TextTitle = styled(motion.h3)`
 `
 
 export const TextP = styled(motion.p)`
-  font-family: 'Raleway',sans-serif;
-  font-weight: 400;
-  color: #cadbe8b9;
-
   width: 300px;
 
-  letter-spacing: 0.1em;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 400;
   font-size: 40px;
+  color: #cadbe8b9;
+  letter-spacing: 0.1em;
 
   @media screen and (max-width: 860px) {
     font-size: 32px;

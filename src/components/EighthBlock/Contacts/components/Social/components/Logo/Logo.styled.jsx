@@ -23,3 +23,28 @@ export const Text = styled.p`
   letter-spacing: 0.1em;
   text-transform: uppercase;
 `
+
+// logo
+
+export const logoStyle1 = {
+  fill: '#ffffffc7',
+  width: 50,
+  height: 50,
+  filter: 'drop-shadow(0px 0px 5px #007bff)',
+  transform: 'translateX(17px)'
+}
+
+export const logoStyle2 = {
+  fill: '#ffffffc7',
+  width: 50,
+  height: 50,
+  filter: 'drop-shadow(0px 0px 5px #007bff)'
+}
+
+export const logoStyle3 = {
+  fill: '#ffffffc7',
+  width: 50,
+  height: 50,
+  filter: 'drop-shadow(0px 0px 5px #007bff)',
+  transform: 'translateX(-17px)'
+}

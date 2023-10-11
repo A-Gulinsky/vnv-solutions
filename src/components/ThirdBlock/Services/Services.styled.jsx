@@ -7,10 +7,9 @@ export const ServicesContainer = styled(motion.div)`
   position: relative;
 
   width: 80%;
+  height: 650px;
   margin-left: auto;
   margin-right: auto;
-  height: 650px;
-
   padding: 0 40px;
 
   border-radius: 4px;
@@ -23,8 +22,9 @@ export const ServicesContainer = styled(motion.div)`
 
     width: 100%;
     height: 4px;
-    border-radius: 4px;
+
     background-color: #ffffffbb;
+    border-radius: 4px;
     box-shadow: 0px 0px 8px 2px #72a9e5;
   }
 
@@ -33,12 +33,14 @@ export const ServicesContainer = styled(motion.div)`
   }
 
   @media screen and (max-width: 440px) {
-    height: 620px;
     padding: 20px;
+
+    height: 620px;
   }
 
   @media screen and (max-width: 400px) {
-    height: 670px;
     padding: 10px;
+
+    height: 670px;
   }
 `

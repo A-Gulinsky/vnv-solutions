@@ -1,6 +1,7 @@
 import { useState } from "react"
+
+// components
 import { MobileButton } from "./MobileButton/MobileButton"
-import { MobileMenu } from "./MobileMenu/MobileMenu"
 import { ParentComponent } from "./MobileMenu/ParentComponent"
 
 export const MobileMenuComponent = () => {
@@ -8,11 +9,13 @@ export const MobileMenuComponent = () => {
   const [mobMenuIsOpen, setMobMenuIsOpen] = useState(false)
   const [animIsOpen, setAnimIsOpen] = useState(false)
 
+  // open menu + anim
   const MenuIsOpen = () => {
     setMobMenuIsOpen(true)
     setAnimIsOpen(true)
   }
 
+  // close menu + anim
   const MenuIsClose = () => {
 
     setAnimIsOpen(false)
@@ -21,7 +24,6 @@ export const MobileMenuComponent = () => {
       setMobMenuIsOpen(false)
     }, 400)
   }
-
   
   return (
     <>

@@ -16,12 +16,11 @@ export const AddressContainer = styled.div`
 export const AddressEmailA = styled.a`
   position: relative;
 
-  text-decoration: none;
-
   font-style: 'Raleway';
   font-size: 18px;
   color: #ffffffb8;
   letter-spacing: 0.1em;
+  text-decoration: none;
 
   &::before {
     content: '';
@@ -36,7 +35,8 @@ export const AddressEmailA = styled.a`
     background-color: #ffffffb8;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #fffffff4;
   }
 

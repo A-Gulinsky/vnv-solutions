@@ -35,7 +35,8 @@ export const Label = styled.label`
 
   border: 1px solid #615e5e;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0px 0px 2px 2px #d5d2d24a;
   }
 `
@@ -78,3 +79,13 @@ export const P = styled(motion.p)`
   font-family: 'Roboto',sans-serif;
   letter-spacing: 0.1em;
 `
+
+// svg
+
+export const svgStyle = {
+  width: 30,
+  height: 30,
+  paddingRight: '10px',
+  fill: '#ffffffcf',
+  filter: 'drop-shadow(0px 0px 5px #2f8aeb)'
+}

@@ -9,10 +9,12 @@ export const TopElementsContainer = styled.div`
 `
 
 export const ButtonBack = styled.button`
-  padding: 0;
   margin: 0;
-  border: none;
+  padding: 0;
+
   background-color: transparent;
+  border: none;
+  
   outline: none;
 `
 

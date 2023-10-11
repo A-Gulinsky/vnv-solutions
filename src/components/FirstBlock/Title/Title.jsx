@@ -1,5 +1,8 @@
-import { OrderButton } from "../Header/components/Button/Button"
+// emotion
 import { Container, H1 } from "./Title.styled"
+
+// component
+import { OrderButton } from "../Header/components/Button/Button"
 
 export const Title = () => {
 

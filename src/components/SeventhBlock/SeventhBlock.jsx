@@ -1,6 +1,10 @@
+
+// components
 import { Section } from "components/SharedComponents/Section/Section"
-import { Container, Title, Wrapper } from "./SeventhBlock.styled"
 import { Brief } from "./Brief/Brief"
+
+// emotion
+import { Container, Title, Wrapper } from "./SeventhBlock.styled"
 
 export const SeventhBlock = () => {
   
@@ -8,9 +12,10 @@ export const SeventhBlock = () => {
     <Section>
       <Wrapper>
         <Container>
+
           <Title>Filling out a brief</Title>
-          
           <Brief />
+          
         </Container>
       </Wrapper>
     </Section>

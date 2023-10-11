@@ -1,6 +1,10 @@
+
+// components
 import { Section } from "components/SharedComponents/Section/Section"
-import { Container, Title } from "./SixthBlock.styled"
 import { FaqContainer } from "./FAQ/FaqContainer"
+
+// emotion
+import { Container, Title } from "./SixthBlock.styled"
 
 export const SixthBlock = () => {
 

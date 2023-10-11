@@ -1,9 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Nav = styled.nav`
-
   display: none;
-
   margin-left: auto;
   margin-right: 80px;
 
@@ -18,7 +16,6 @@ export const Nav = styled.nav`
 `
 
 export const Ul = styled.ul`
-
   display: flex;
   gap: 20px;
 
@@ -28,24 +25,28 @@ export const Ul = styled.ul`
 export const Li = styled.li`
 
   transition: 200ms;
-  &:hover {
-    transform: scale(1.03);
+  &:hover,
+  &:focus {
     color: #fff;
+
+    transform: scale(1.03);
   }
 `
 
 export const Link = styled.a`
   padding: 10px 0;
-  text-decoration: none;
-  font-size: 18px;
+
   font-family: 'Raleway',sans-serif;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 18px;
   color: #ffffffdc;
+  letter-spacing: 0.1em;
+  text-decoration: none;
 
   transition: 200ms;
 
-  &:hover {
+  &:hover,
+  &:focus{
     color: #fff;
   }
 

@@ -1,14 +1,9 @@
-import { MobileLinkA, MobileSocialContainer, MobileLinkLi, UpperMobileUl, BottomMobileUl } from "./MobileSocial.styled"
 
+// emotion / react-icons
+import { svgStyle, MobileLinkA, MobileSocialContainer, MobileLinkLi, UpperMobileUl, BottomMobileUl } from "./MobileSocial.styled"
 import { FaLinkedinIn,FaTiktok } from 'react-icons/fa'
 import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi'
 import { LiaTelegramPlane } from 'react-icons/lia'
-
-const svgStyle = {
-  fill: '#fff',
-  width: 30,
-  height: 30
-}
 
 export const MobileSocial = () => {
 

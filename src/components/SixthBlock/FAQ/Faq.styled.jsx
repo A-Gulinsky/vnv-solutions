@@ -47,6 +47,8 @@ export const FaqQuestionDiv = styled.div`
 
   padding: 0.8rem 1.2rem;
 
+  cursor: pointer;
+
   @media screen and (max-width: 370px) {
     padding: 13px 5px;
   }

@@ -1,10 +1,16 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-import { MobileMenu } from "./MobileMenu"; // Импортируйте ваш MobileMenu компонент
+// component
+import { MobileMenu } from "./MobileMenu";
+
+// emotion
 import { ParentMenuContainer } from "./MobileMenu.styled";
 
 const rootModal = document.querySelector(`#mobile-menu`)
+
+// The parent component is made to prohibit 
+// scrolling and prevent conflicts with animations
 
 export const ParentComponent = ({ onClose, isOpen }) => {
 
@@ -22,7 +28,6 @@ export const ParentComponent = ({ onClose, isOpen }) => {
 
 
   return createPortal(
-    // Используйте motion.div для анимации
     <ParentMenuContainer>
       <MobileMenu onClose={onClose} isOpen={isOpen} />
     </ParentMenuContainer>,

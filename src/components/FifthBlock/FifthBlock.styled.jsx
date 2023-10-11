@@ -1,21 +1,20 @@
 import styled from "@emotion/styled";
 
+// anim
 import { motion } from "framer-motion";
-
+// theme
 import theme2 from '../../assets/photo/theme-2.jpg'
 
 export const Container = styled(motion.div)`
   max-width: 1170px;
   padding: 0px 15px;
   margin: 0 auto;
-
 `
 
 export const InfoContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   padding: 80px 0;
 
   @media screen and (max-width: 730px) {
@@ -37,7 +36,6 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled(motion.h2)`
-  text-align: left;
   margin-left: 40px;
   padding: 10px 0 10px 0;
 
@@ -45,6 +43,7 @@ export const Title = styled(motion.h2)`
   font-weight: 200;
   font-size: 40px;
   color: #ffffffbb;
+  text-align: left;
 
   @media screen and (max-width: 790px) {
     margin-left: 0;

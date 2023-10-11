@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
 
   position: relative;
-
   width: 100%;
 
   &::after {
@@ -17,13 +16,13 @@ export const Container = styled.div`
     height: 100%;
 
     background-color: #000;
+
     opacity: 0.6;
   }
 
 `
 
 export const Video = styled.video`
-
   position: absolute;
   top: 0;
   left: 0;

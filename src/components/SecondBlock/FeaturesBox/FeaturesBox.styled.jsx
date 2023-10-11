@@ -6,8 +6,10 @@ export const FeaturesBoxStyled = styled(motion.div)`
   position: relative;
   width: 450px;
   height: 400px;
+
   filter: drop-shadow(0px 0px 9px #a0c3ea);
   border-radius: 4px;
+
   z-index: 10;
 
   &::before {
@@ -15,13 +17,13 @@ export const FeaturesBoxStyled = styled(motion.div)`
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 
     background-color: #000;
     border-radius: 6px;
-    clip-path: polygon(11% 0, 100% 0, 100% 71%, 100% 81%, 90% 93%, 37% 93%, 28% 100%, 0 100%, 0 23%, 0 0);
 
-    width: 100%;
-    height: 100%;
+    clip-path: polygon(11% 0, 100% 0, 100% 71%, 100% 81%, 90% 93%, 37% 93%, 28% 100%, 0 100%, 0 23%, 0 0);
   }
 
   @media screen and (max-width: 1022px) {
@@ -50,7 +52,6 @@ export const DataContainer = styled.div`
   flex-direction: column;
   gap: 40px;
   justify-content: space-between;
-
   padding: 40px;
 
   @media screen and (max-width: 1022px) {
@@ -65,9 +66,8 @@ export const DataContainer = styled.div`
 export const MotionDataContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  gap: 40px;
   justify-content: space-between;
-
+  gap: 40px;
   padding: 40px;
 
   @media screen and (max-width: 1022px) {
@@ -86,16 +86,16 @@ export const DescriptionDataContainer = styled.div`
 `
 
 export const AdvantageTitle = styled.h3`
-  text-align: center;
-  color: white;
-
   position: relative;
+
   margin-left: auto;
   margin-right: auto;
 
   font-family: 'Raleway',sans-serif;
-  letter-spacing: 0.2em;
   font-size: 20px;
+  color: white;
+  letter-spacing: 0.2em;
+  text-align: center;
 
   &::after {
     content: '';
@@ -104,16 +104,14 @@ export const AdvantageTitle = styled.h3`
     left: 15%;
     width: 70%;
     height: 1px;
-    border-radius: 2px;
+
     background-color: #fff;
+    border-radius: 2px;
     box-shadow: 0px 0px 8px 2px #72a9e5
   }
 `
 
 export const AdvantageDescription = styled.b`
-  text-align: center;
-  color: #ffffffde;
-
   display: block;
   width: 300px;
   margin-left: auto;
@@ -121,6 +119,8 @@ export const AdvantageDescription = styled.b`
 
   font-family: 'Roboto',sans-serif;
   font-size: 18px;
+  color: #ffffffde;
+  text-align: center;
   letter-spacing: 0.1em;
   line-height: 30px;
 
@@ -134,8 +134,8 @@ export const AdvantageDescription = styled.b`
 
   @media screen and (max-width: 780px) {
     width: 300px;
-    line-height: 30px;
     font-size: 18px;
+    line-height: 30px;
   }
 
   @media screen and (max-width: 390px) {

@@ -1,7 +1,10 @@
+// emotion
 import { Container, Wrapper } from "./FirstBlock.styled"
+
+// components
+import { VideoContainer } from "./VideoContainer/VideoContainer"
 import { Header } from "./Header/Header"
 import { Title } from "./Title/Title"
-import { VideoContainer } from "./VideoContainer/VideoContainer"
 
 export const FirstBlock = () => {
 
@@ -9,8 +12,10 @@ export const FirstBlock = () => {
     <VideoContainer>
       <Wrapper>
         <Container>
+
           <Header />
           <Title />
+
         </Container>
       </Wrapper>
     </VideoContainer>
