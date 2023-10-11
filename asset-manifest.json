@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/vnv-solutions/static/css/main.f5f31198.css",
+    "main.js": "/vnv-solutions/static/js/main.0d71a499.js",
+    "static/media/videoBg.mp4": "/vnv-solutions/static/media/videoBg.13c190341f14f0262ac6.mp4",
+    "static/media/project-img-3.png": "/vnv-solutions/static/media/project-img-3.2758354e3bcb0883c916.png",
+    "static/media/theme-1.jpg": "/vnv-solutions/static/media/theme-1.155cd0b09737b7b9851c.jpg",
+    "static/media/project-img-2.png": "/vnv-solutions/static/media/project-img-2.d485fca62a6313f74c48.png",
+    "static/media/theme-2.jpg": "/vnv-solutions/static/media/theme-2.c1f0254a236ff285aeaf.jpg",
+    "static/media/service-6.png": "/vnv-solutions/static/media/service-6.8dfd3775e438bf724088.png",
+    "static/media/project-img-1.png": "/vnv-solutions/static/media/project-img-1.f66e300a36473ef80a7b.png",
+    "static/media/service-2.png": "/vnv-solutions/static/media/service-2.11e4852f9979edd1381d.png",
+    "static/media/service-3.png": "/vnv-solutions/static/media/service-3.a11a5d5eecbc1eb3d5b2.png",
+    "static/media/service-4.png": "/vnv-solutions/static/media/service-4.2a669d2fb9e5e7db47e9.png",
+    "static/media/service-5.png": "/vnv-solutions/static/media/service-5.6bb32c8860f4f9ff29a1.png",
+    "static/media/service-1.png": "/vnv-solutions/static/media/service-1.bb227359f6e94d0eeaf2.png",
+    "static/media/project-2.svg": "/vnv-solutions/static/media/project-2.177e3345ee2481aaf839cb92c3f1d988.svg",
+    "static/media/document.svg": "/vnv-solutions/static/media/document.283a8d1b5e2ba6314338f306100655de.svg",
+    "index.html": "/vnv-solutions/index.html",
+    "static/media/V.svg": "/vnv-solutions/static/media/V.e9d039a83be6a4abf61f0c783ba2b399.svg",
+    "static/media/N.svg": "/vnv-solutions/static/media/N.0507a0451558df119748471afd12d29b.svg",
+    "static/media/mobilebackbtn.svg": "/vnv-solutions/static/media/mobilebackbtn.ca51fea67a1d3f064ba5e238a80f95cb.svg",
+    "main.f5f31198.css.map": "/vnv-solutions/static/css/main.f5f31198.css.map",
+    "main.0d71a499.js.map": "/vnv-solutions/static/js/main.0d71a499.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5f31198.css",
+    "static/js/main.0d71a499.js"
+  ]
+}
