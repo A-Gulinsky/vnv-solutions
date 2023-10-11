@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-export const Form = styled.form`
+export const Form = styled(motion.form)`
   display: flex;
   flex-direction: column;
   justify-content: center;

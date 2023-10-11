@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
 export const GeneralContainer = styled.div`
   display: flex;
@@ -17,19 +18,21 @@ export const GeneralContainer = styled.div`
   }
 `
 
-export const FaqFirstList= styled.ul`
+export const FaqFirstList= styled(motion.ul)`
   display: flex;
   flex-direction: column;
   gap: 20px;
 `
 
-export const FaqLastList= styled.ul`
+export const FaqLastList= styled(motion.ul)`
   display: flex;
   flex-direction: column;
   gap: 20px;
 `
 
 export const FaqQuestionDiv = styled.div`
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +52,12 @@ export const FaqQuestionDiv = styled.div`
   }
 `
 
+export const FaqQuestionLi = styled(motion.li)`
+  
+`
+
 export const FaqQuestionH3 = styled.h3`
+
   font-family: 'Raleway',sans-serif;
   font-weight: 700;
   color: #ffffffcc;

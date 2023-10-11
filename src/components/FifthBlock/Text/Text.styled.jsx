@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import { motion } from "framer-motion";
+
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,7 +13,7 @@ export const TextContainer = styled.div`
   }
 `
 
-export const TextTitle = styled.h3`
+export const TextTitle = styled(motion.h3)`
   font-family: 'Raleway',sans-serif;
   font-weight: 600;
   color: #ffffffbb;
@@ -24,7 +26,7 @@ export const TextTitle = styled.h3`
   }
 `
 
-export const TextP = styled.p`
+export const TextP = styled(motion.p)`
   font-family: 'Raleway',sans-serif;
   font-weight: 400;
   color: #cadbe8b9;

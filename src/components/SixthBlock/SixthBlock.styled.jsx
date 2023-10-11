@@ -1,15 +1,18 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div`
+import { motion } from "framer-motion";
+
+export const Container = styled(motion.div)`
   max-width: 1170px;
-  padding: 70px 15px;
+  padding: 100px 15px 90px;
   margin: 0 auto;
 
+  overflow: hidden;
 `
 
 export const Title = styled.h2`
   text-align: center;
-  padding: 40px;
+  padding: 40px 40px 90px;
 
   font-family: 'Raleway',sans-serif;
   font-weight: 200;

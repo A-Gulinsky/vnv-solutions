@@ -2,17 +2,47 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { AnswerContainer, AnswerP, FaqQuestionDiv, FaqQuestionH3 } from "./Faq.styled";
 
+import { FaArrowUpLong,FaArrowDownLong } from 'react-icons/fa6'
+
+const svgIcon = {
+  width: 17,
+  height: 35,
+  fill: '#ffffffcc',
+  position: 'absolute',
+  top: 5,
+  right: 5
+}
+
 export const Faq = (props) => {
   const { title = 'click me', children } = props
   
   const [isVisible, setVisible] = useState(false)
 
+  // icon
+  const [isHovered, setIsHovered] = useState(false)
+
   const handleClick = () => setVisible(!isVisible)
+
+  const onHoverTest = () => {
+    setIsHovered(true)
+  }
+
+  const offHoverTest = () => {
+    setIsHovered(false)
+  }
 
   return (
     <>
-      <FaqQuestionDiv onClick={handleClick}>
-        <FaqQuestionH3>{title}</FaqQuestionH3>
+      <FaqQuestionDiv
+        onClick={handleClick}
+        onMouseEnter={onHoverTest}
+        onMouseLeave={offHoverTest}
+      >
+        <FaqQuestionH3>
+          {title}
+          {isHovered && !isVisible && <FaArrowUpLong style={svgIcon} />}
+          {isVisible && <FaArrowDownLong style={svgIcon} />}
+        </FaqQuestionH3>
       </FaqQuestionDiv>
 
       <AnimatePresence>

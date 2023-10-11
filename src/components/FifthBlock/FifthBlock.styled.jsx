@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
 
+import { motion } from "framer-motion";
+
 import theme2 from '../../assets/photo/theme-2.jpg'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   max-width: 1170px;
   padding: 0px 15px;
   margin: 0 auto;
@@ -34,7 +36,7 @@ export const Wrapper = styled.div`
   background-size: cover;
 `
 
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
   text-align: left;
   margin-left: 40px;
   padding: 10px 0 10px 0;

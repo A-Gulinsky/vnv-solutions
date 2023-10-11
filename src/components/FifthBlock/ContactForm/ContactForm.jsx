@@ -16,6 +16,17 @@ import { TextArea } from "./components/TextArea/TextArea"
 
 import { toast } from "react-toastify"
 
+const testAnim = {
+  hidden: {
+    opacity: 0,
+    x: 80
+  },
+  visible: {
+    opacity: 1,
+    x: 0
+  }
+}
+
 export const ContactForm = () => {
   
   const [communicationChoice, setCommunicationChoice] = useState('phone')
@@ -43,7 +54,11 @@ export const ContactForm = () => {
   }
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
+    <Form
+      variants={testAnim}
+      transition={{ duration: 1.5, delay: 1 }}
+      onSubmit={handleSubmit(onSubmit)}
+    >
       
       <BasicInput register={register} errors={errors} />
 
