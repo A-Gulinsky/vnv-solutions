@@ -9,7 +9,9 @@ export const VideoContainer = ({ children }) => {
   return (
     <Container>
       
-      <Video src={videoBg} autoPlay loop muted playsinline />
+      <Video autoPlay loop muted playsInline>
+        <source src={videoBg} type="video/mp4" />
+      </Video>
       
       {children}
     </Container>

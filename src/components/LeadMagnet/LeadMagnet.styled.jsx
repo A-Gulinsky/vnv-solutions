@@ -9,6 +9,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  z-index: 100;
 `
 
 export const Button = styled.button`

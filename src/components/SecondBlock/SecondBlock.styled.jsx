@@ -7,6 +7,8 @@ export const Container = styled(motion.div)`
   padding: 40px 15px;
   
   overflow: hidden;
+
+  z-index: 50;
 `
 
 export const ItemContainer = styled(motion.div)`

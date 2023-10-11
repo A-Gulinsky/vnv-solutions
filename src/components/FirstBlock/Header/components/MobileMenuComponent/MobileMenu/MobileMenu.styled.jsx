@@ -8,6 +8,7 @@ export const ParentMenuContainer = styled.div`
 
   width: 100vw;
   height: 100vh;
+  z-index: 999;
 `
 
 export const MobileMenuContainer = styled(motion.div)`
@@ -20,5 +21,4 @@ export const MobileMenuContainer = styled(motion.div)`
   background-color: #000000;
   
   overflow: hidden;
-  z-index: 999;
 `
