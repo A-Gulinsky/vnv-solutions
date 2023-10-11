@@ -8,6 +8,12 @@ export const Ul = styled.ul`
   gap: 40px;
 
   color: white;
+
+  @media screen and (orientation: landscape) {
+    gap: 20px;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
 `
 
 export const Li = styled.li`
@@ -36,5 +42,9 @@ export const Link = styled.a`
   &:hover,
   &:focus {
     color: #fff;
+  }
+
+  @media screen and (orientation: landscape) {
+    font-size: 18px;
   }
 `

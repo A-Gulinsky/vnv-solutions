@@ -7,7 +7,6 @@ export const FeaturesBoxStyled = styled(motion.div)`
   width: 450px;
   height: 400px;
 
-  filter: drop-shadow(0px 0px 9px #a0c3ea);
   border-radius: 4px;
 
   z-index: 10;
@@ -23,7 +22,14 @@ export const FeaturesBoxStyled = styled(motion.div)`
     background-color: #000;
     border-radius: 6px;
 
-    clip-path: polygon(11% 0, 100% 0, 100% 71%, 100% 81%, 90% 93%, 37% 93%, 28% 100%, 0 100%, 0 23%, 0 0);
+    @media screen and (min-width: 450px) {
+      filter: drop-shadow(0px 0px 9px #a0c3ea);
+      clip-path: polygon(11% 0, 100% 0, 100% 71%, 100% 81%, 90% 93%, 37% 93%, 28% 100%, 0 100%, 0 23%, 0 0);
+    }
+
+    @media screen and (max-width: 449px) {
+      box-shadow: 0px 0px 3px 1px #a0c3ea;
+    }
   }
 
   @media screen and (max-width: 1022px) {
@@ -61,6 +67,10 @@ export const DataContainer = styled.div`
   @media screen and (max-width: 866px) {
     padding: 15px;
   }
+
+  @media screen and (max-width: 600px) {
+    padding: 8px;
+  }
 `
 
 export const MotionDataContainer = styled(motion.div)`
@@ -76,6 +86,10 @@ export const MotionDataContainer = styled(motion.div)`
 
   @media screen and (max-width: 866px) {
     padding: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 8px;
   }
 `
 
@@ -138,9 +152,9 @@ export const AdvantageDescription = styled.b`
     line-height: 30px;
   }
 
-  @media screen and (max-width: 390px) {
-    width: 200px;
+  @media screen and (max-width: 500px) {
+    width: 240px;
     font-size: 14px;
-    line-height: 15px;
+    line-height: 17px;
   }
 `

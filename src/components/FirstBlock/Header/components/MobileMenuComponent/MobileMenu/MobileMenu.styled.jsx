@@ -21,4 +21,8 @@ export const MobileMenuContainer = styled(motion.div)`
   background-color: #000000;
   
   overflow: hidden;
+
+  @media screen and (orientation: landscape) {
+    justify-content: center;
+  }
 `

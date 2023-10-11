@@ -15,6 +15,11 @@ export const MobileSocialContainer = styled.div`
   @media screen and (max-width: 445px) {
     flex-direction: column;
   }
+
+  @media screen and (orientation: landscape) {
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
 `
 
 export const UpperMobileUl = styled.ul`

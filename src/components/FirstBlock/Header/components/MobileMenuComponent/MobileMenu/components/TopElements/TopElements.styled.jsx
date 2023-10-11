@@ -6,6 +6,10 @@ export const TopElementsContainer = styled.div`
   align-items: center;
 
   padding: 20px 20px 0;
+
+  @media screen and (orientation: landscape) {
+    margin-bottom: auto;
+  }
 `
 
 export const ButtonBack = styled.button`
