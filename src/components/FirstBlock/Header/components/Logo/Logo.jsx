@@ -15,7 +15,7 @@ export const Logo = () => {
 
   return (
     
-    <LogoLink href="/">
+    <LogoLink href="/index.html">
       <Ul>
 
         {/* V */}
