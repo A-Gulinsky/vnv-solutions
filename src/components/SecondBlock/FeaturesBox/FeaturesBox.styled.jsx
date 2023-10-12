@@ -165,3 +165,10 @@ export const AdvantageDescription = styled.b`
     line-height: 17px;
   }
 `
+
+export const svgIcon = {
+  width: 80,
+  height: 80,
+  fill: '#fff',
+  filter: "drop-shadow(0px 0px 15px #4ea0f6)"
+}

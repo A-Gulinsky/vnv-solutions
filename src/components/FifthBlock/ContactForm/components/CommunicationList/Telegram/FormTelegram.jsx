@@ -1,9 +1,12 @@
+
+// emotion
 import { Input, Label, P } from "./FormTelegram.styled"
 
+// svg
 import { PiTelegramLogo} from 'react-icons/pi'
 
+// anim
 import { errorAnim } from "../../errorAnim"
-
 
 export const Telegram = ({register, errors}) => {
 
@@ -16,18 +19,13 @@ export const Telegram = ({register, errors}) => {
         autoComplete="nope"
         {...register("telegram", {
           required: 'Required field',
-          pattern: {
-            value: /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/,
-            message: `Incorrect format`
-          },
           maxLength: {
-            value: 10,
-            message: 'Max 10 length'
+            value: 15,
+            message: 'Max 15 length'
           }
         })}
         style={{ borderColor: errors.phone ? 'red' : 'initial' }}
         placeholder="Telegram"
-        type="text"
       />
       {errors.telegram && <P variants={errorAnim} initial='hidden' animate='visible' transition={{duration: 0.2}}>{errors.telegram.message}</P>}
     </Label>

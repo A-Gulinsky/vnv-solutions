@@ -1,7 +1,11 @@
+
+// emotion
 import { Input, Label, P } from "./FormPhone.styled"
 
+// svg
 import { MdPhoneIphone } from 'react-icons/md'
 
+// anim
 import { errorAnim } from "../../errorAnim"
 
 export const Phone = ({register, errors }) => {
@@ -20,8 +24,8 @@ export const Phone = ({register, errors }) => {
             message: `Incorrect format`
           },
           maxLength: {
-            value: 10,
-            message: 'Max 10 length'
+            value: 12,
+            message: 'Max 12 length'
           }
         })}
         style={{ borderColor: errors.phone ? 'red' : 'initial' }}

@@ -1,7 +1,11 @@
 
+// svg
 import { AiOutlineWhatsApp } from 'react-icons/ai'
+
+// emotion
 import { Input, Label, P } from './FormWhatsApp.styled'
 
+// anim
 import { errorAnim } from '../../errorAnim'
 
 export const WhatsApp = ({register, errors}) => {
@@ -9,7 +13,7 @@ export const WhatsApp = ({register, errors}) => {
   return (
     <Label>
 
-      <AiOutlineWhatsApp style={{ width: 30, height: 30, paddingRight: '10px', fill: '#ffffffd0',filter: 'drop-shadow(0px 0px 8px #04e10bd2)' }} />
+      <AiOutlineWhatsApp style={{ width: 30, height: 30, paddingRight: '10px', fill: '#ffffffd0', filter: 'drop-shadow(0px 0px 8px #04e10bd2)' }} />
 
       <Input
         autoComplete="nope"
@@ -20,8 +24,8 @@ export const WhatsApp = ({register, errors}) => {
             message: `Incorrect format`
           },
           maxLength: {
-            value: 10,
-            message: 'Max 10 length'
+            value: 12,
+            message: 'Max 12 length'
           }
         })}
         style={{ borderColor: errors.phone ? 'red' : 'initial' }}

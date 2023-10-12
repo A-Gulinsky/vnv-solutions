@@ -5,10 +5,10 @@ export const BriefTextH3 = styled.h3`
 
   font-family: 'Raleway',sans-serif;
   font-weight: 500;
-  letter-spacing: 0.1em;
-  line-height: 38px;
-  color: #ffffff99;
   font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  color: #ffffff99;
 
   @media screen and (max-width: 1030px) {
     max-width: 400px;

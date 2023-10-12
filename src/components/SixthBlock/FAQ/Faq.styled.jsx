@@ -39,13 +39,12 @@ export const FaqQuestionDiv = styled.div`
 
   width: 300px;
   height: 64px;
-  background-color: transparent;
+  padding: 0.8rem 1.2rem;
 
+  background-color: transparent;
   border: 1px solid #97c2efaf;
   border-radius: 4px;
   box-shadow: 0px 0px 4px 1px #72aae5b0;
-
-  padding: 0.8rem 1.2rem;
 
   cursor: pointer;
 
@@ -59,7 +58,6 @@ export const FaqQuestionLi = styled(motion.li)`
 `
 
 export const FaqQuestionH3 = styled.h3`
-
   font-family: 'Raleway',sans-serif;
   font-weight: 700;
   color: #ffffffcc;
@@ -69,8 +67,9 @@ export const FaqQuestionH3 = styled.h3`
 `
 
 export const AnswerContainer = styled.div`
-  padding: 0.8rem 1.2rem;
   width: 300px;
+  padding: 0.8rem 1.2rem;
+
   border: 1px solid #97c2efaf;
   border-top: none;
   border-bottom-left-radius: 4px;
@@ -83,11 +82,11 @@ export const AnswerContainer = styled.div`
 `
 
 export const AnswerP = styled.p`
+  font-family: 'Roboto',sans-serif;
+  font-size: 16px;
   text-align: center;
   color: #75a8c9d3;
-  font-family: 'Roboto',sans-serif;
   letter-spacing: 0.1em;
-  font-size: 16px;
 `
 
 export const svgIcon = {

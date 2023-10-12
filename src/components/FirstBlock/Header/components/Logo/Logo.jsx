@@ -1,5 +1,5 @@
 // emotion
-import { LogoStyled, Text, Ul, logoStyle1, logoStyle2, logoStyle3 } from "./Logo.styled"
+import { LogoLink, LogoStyled, Text, Ul, logoStyle1, logoStyle2, logoStyle3 } from "./Logo.styled"
 
 // svg icons
 import { ReactComponent as LogoV } from 'assets/photo/logo/V.svg'
@@ -14,8 +14,10 @@ import { firstL, animN, lastL, textAnim } from "./anim"
 export const Logo = () => {
 
   return (
-    <LogoStyled>
+    
+    <LogoLink href="/">
       <Ul>
+
         {/* V */}
         <motion.li
           variants={firstL}
@@ -25,6 +27,7 @@ export const Logo = () => {
         >
           <LogoV style={logoStyle1} />
         </motion.li>
+
         {/* N */}
         <motion.li
           variants={animN}
@@ -54,6 +57,6 @@ export const Logo = () => {
       >
         solutions
       </Text>
-    </LogoStyled>
+    </LogoLink>
   )
 }

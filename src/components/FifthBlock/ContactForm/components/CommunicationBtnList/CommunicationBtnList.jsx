@@ -1,15 +1,15 @@
-import { Button, CommunicationContainer, InputTitle, Ul } from "./CommunicationBtnList.styled"
 
+// emotion
+import { btnStyle, Button, CommunicationContainer, InputTitle, Ul } from "./CommunicationBtnList.styled"
+
+// react icons
 import { MdPhoneIphone } from 'react-icons/md'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { FaViber } from 'react-icons/fa'
 import { PiTelegramLogo } from 'react-icons/pi'
 
-const btnStyle = {
-  width: 35,
-  height: 35,
-  fill: '#ffffffd0'
-}
+// props
+import PropTypes from 'prop-types'
 
 export const CommunicationBtnList = ({activeChoice,handleChoiceClick}) => {
   
@@ -17,6 +17,7 @@ export const CommunicationBtnList = ({activeChoice,handleChoiceClick}) => {
     <CommunicationContainer>
       <InputTitle>Communication method</InputTitle>
       <Ul>
+
         <li>
           <Button
             type="button"
@@ -27,6 +28,7 @@ export const CommunicationBtnList = ({activeChoice,handleChoiceClick}) => {
             <MdPhoneIphone style={btnStyle}/>
           </Button>
         </li>
+
         <li>
           <Button
             type="button"
@@ -37,6 +39,7 @@ export const CommunicationBtnList = ({activeChoice,handleChoiceClick}) => {
             <PiTelegramLogo style={btnStyle} />
           </Button>
         </li>
+
         <li>
           <Button
             type="button"
@@ -47,6 +50,7 @@ export const CommunicationBtnList = ({activeChoice,handleChoiceClick}) => {
             <AiOutlineWhatsApp style={btnStyle} />
           </Button>
         </li>
+
         <li>
           <Button
             type="button"
@@ -57,7 +61,13 @@ export const CommunicationBtnList = ({activeChoice,handleChoiceClick}) => {
             <FaViber style={btnStyle} />
           </Button>
         </li>
+        
       </Ul>
     </CommunicationContainer>
   )
 }
+
+CommunicationBtnList.propTypes = {
+  activeChoice: PropTypes.string,
+  handleChoiceClick: PropTypes.func,
+};

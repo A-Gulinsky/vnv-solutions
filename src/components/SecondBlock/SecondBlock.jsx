@@ -15,8 +15,9 @@ export const SecondBlock = () => {
 
   const [id, setId] = useState(0)
   const [activeLi, setActiveLi] = useState(false)
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
+  // viewport width
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   const handleItemClick = (id) => {
     setId(id)
@@ -28,7 +29,8 @@ export const SecondBlock = () => {
     }, 1500)
   }
 
-  // 
+  // This is needed to track the width of the viewport in order 
+  // to enable or disable animation on blocks
   useEffect(() => {
     const handleResize = () => {
       setViewportWidth(window.innerWidth);

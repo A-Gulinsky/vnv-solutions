@@ -41,3 +41,10 @@ export const Button = styled.button`
     transform: scale(1.07);
   }
 `
+
+// svg style
+export const btnStyle = {
+  width: 35,
+  height: 35,
+  fill: '#ffffffd0'
+}

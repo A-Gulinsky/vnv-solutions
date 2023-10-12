@@ -9,8 +9,11 @@ import { Container, Title } from "./SixthBlock.styled"
 
 export const SixthBlock = () => {
 
+  // viewport width
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
+  // This is needed to track the width of the viewport in order 
+  // to enable or disable animation on blocks
   useEffect(() => {
     const handleResize = () => {
       setViewportWidth(window.innerWidth);

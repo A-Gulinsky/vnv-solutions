@@ -1,7 +1,11 @@
 
+// svg
 import { FaViber } from "react-icons/fa6"
+
+// emotion
 import { Input, Label, P } from "./FormViber.styled"
 
+// anim
 import { errorAnim } from "../../errorAnim"
 
 export const FormViber = ({register, errors}) => {
@@ -20,8 +24,8 @@ export const FormViber = ({register, errors}) => {
             message: `Incorrect format`
           },
           maxLength: {
-            value: 10,
-            message: 'Max 10 length'
+            value: 12,
+            message: 'Max 12 length'
           }
         })}
         style={{ borderColor: errors.phone ? 'red' : 'initial' }}

@@ -11,7 +11,7 @@ export const NameOptions = {
   },
 }
 
-export const NumberOptions = {
+export const EmailOptions = {
   required: 'Required field',
   pattern: {
     message: `Incorrect format`

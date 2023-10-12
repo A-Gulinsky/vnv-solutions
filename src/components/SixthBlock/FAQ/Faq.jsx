@@ -1,8 +1,13 @@
-import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { svgIcon,AnswerContainer, AnswerP, FaqQuestionDiv, FaqQuestionH3 } from "./Faq.styled";
 
+// emotion
+import { svgIcon, AnswerContainer, AnswerP, FaqQuestionDiv, FaqQuestionH3 } from "./Faq.styled";
+
+// icon
 import { FaArrowUpLong,FaArrowDownLong } from 'react-icons/fa6'
+
+// framer anim
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Faq = (props) => {
   const { title = 'click me', children } = props
@@ -10,7 +15,7 @@ export const Faq = (props) => {
   // isVisible answer div
   const [isVisible, setVisible] = useState(false)
 
-  // icon
+  // if isHovered = true , visible svg arrow
   const [isHovered, setIsHovered] = useState(false)
 
   const handleClick = () => setVisible(!isVisible)

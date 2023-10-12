@@ -109,17 +109,17 @@ export const DescriptionP = styled(motion.p)`
 `
 
 export const ButtonIWant = styled.button`
-  background-color: transparent;
-  border: 1px solid #ffffffeb;
-  border-radius: 4px;
-  padding: 7px 25px;
-
-  color: #ffffffd4;
-
   width: 70%;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  color: #ffffffd4;
+
+  background-color: transparent;
+  border: 1px solid #ffffffeb;
+  border-radius: 4px;
+  padding: 7px 25px;
 
   box-shadow: 0px 0px 4px 1px #fffffff7;
 
