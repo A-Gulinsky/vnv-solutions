@@ -1,5 +1,5 @@
 // emotion
-import { LogoLink, LogoStyled, Text, Ul, logoStyle1, logoStyle2, logoStyle3 } from "./Logo.styled"
+import { LogoLink, Text, Ul, logoStyle1, logoStyle2, logoStyle3 } from "./Logo.styled"
 
 // svg icons
 import { ReactComponent as LogoV } from 'assets/photo/logo/V.svg'
