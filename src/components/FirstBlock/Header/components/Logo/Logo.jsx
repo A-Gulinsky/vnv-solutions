@@ -15,7 +15,7 @@ export const Logo = () => {
 
   return (
     
-    <LogoLink href="/index.html">
+    <LogoLink href="/vnv-solutions/index.html">
       <Ul>
 
         {/* V */}
